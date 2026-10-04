@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Validation status</title><style>body{max-width:960px;margin:0 auto;padding:45px 25px;font:17px/1.65 system-ui,Segoe UI,sans-serif;color:#202b30;background:#fff}h1{font-size:38px;line-height:1.15}h2{font-size:25px;margin-top:45px}h3{font-size:19px;margin:28px 0 8px}h1,h2,h3{color:#000}a{color:#086963}img{display:block;max-width:100%;height:auto;border:1px solid #ddd}figure{margin:30px 0}figcaption,.meta{font-size:14px;color:#546164}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:18px;background:#f5f6f6;font:14px/1.6 Consolas,monospace}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid #d9d9d9;padding:12px;text-align:left}th{background:#e9eef0}nav a{margin-right:18px}li{margin:8px 0}@media print{body{padding:0;font-size:11pt}h2{break-after:avoid}pre,figure{break-inside:avoid}nav{display:none}@page{size:letter;margin:.75in}}</style><body><nav><a href="../dashboard/index.html">Dashboard</a><a href="GUIDE.html">Project guide</a></nav><h1>Validation status</h1>
-<h2>Completed locally</h2>
+<h2>Completed checks</h2>
 <ul>
 <li>The source contains 385,723 unique request IDs within the required January–September cohort.</li>
 <li>Preserved CSV SHA-256 matches the extraction manifest.</li>
@@ -13,12 +13,13 @@
 <li>Browser console inspection found no errors or warnings during the desktop page checks.</li>
 <li>A phone-sized viewport showed no document-level horizontal overflow. The title and export control were adjusted for narrow screens.</li>
 <li>Export summary downloaded a CSV whose unfiltered counts, median, P90 and snapshot date match the checked analysis.</li>
+<li>The <a href="https://github.com/Aftab-777/calgary-311-service-operations/actions/runs/37180375946">first GitHub Actions run</a> passed the source checksum, unit tests, Python and SQL reconciliation, browser aggregation tests, model integrity checks, generated-file diff check, site-link validation and Pages deployment.</li>
+<li>The <a href="https://aftab-777.github.io/calgary-311-service-operations/dashboard/">public dashboard</a> loaded with 381,923 nonduplicate requests, 25,636 Open and a two-day median. Its September plus WRS Cart Management filter produced 2,475 requests, 42 Open, 2,433 valid closures, median one day and P90 four days. Workload and quality pages, methodology and guide links loaded; browser console showed no errors or warnings during the public checks.</li>
 </ul>
 <p>The evidence files under <code>analysis/</code> distinguish data, model and JSON schema validation. Passing a schema does not compile DAX or M, parse TMDL in Desktop or validate visual rendering.</p>
 <h2>Pending</h2>
 <ul>
 <li>Power BI Desktop open, refresh, measure evaluation, visual rendering and save/reopen checks. Follow <code>powerbi/README.md</code>.</li>
-<li>Remote GitHub Actions execution and hosted-page verification after publication. The workflow is prepared but has not run remotely.</li>
 </ul>
 <p>No SLA compliance, causal effects, financial benefits or City endorsement have been validated or claimed.</p>
 </body></html>
