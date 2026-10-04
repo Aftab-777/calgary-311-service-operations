@@ -1,0 +1,459 @@
+service_key,service_name,agency
+1,ACPL - Animal Licence - Inquiries,CS - Emergency Management and Community Safety
+2,ACPL - Bite Prevention Program Application,CS - Emergency Management and Community Safety
+3,ACPL - Lost and Found Animal,CS - Emergency Management and Community Safety
+4,ACPL - No Cost Spay or Neuter Program Inquiries,CS - Emergency Management and Community Safety
+5,ACPL - Wise Whiskers  Think Like a Scientist Class Kit,CS - Emergency Management and Community Safety
+6,AS - Animal Bite,CS - Emergency Management and Community Safety
+7,AS - Animal Chase - Threat,CS - Emergency Management and Community Safety
+8,AS - Animal Damaging Pet or Property,CS - Emergency Management and Community Safety
+9,AS - Animal Injured,CS - Emergency Management and Community Safety
+10,AS - Animal Interference,CS - Emergency Management and Community Safety
+11,AS - Animal Noise,CS - Emergency Management and Community Safety
+12,AS - Animal Park - Pathway Concerns,CS - Emergency Management and Community Safety
+13,AS - Animal Public Relations,CS - Emergency Management and Community Safety
+14,AS - Animal Services Assistance Required,CS - Emergency Management and Community Safety
+15,AS - Animal Tethered -Tied,CS - Emergency Management and Community Safety
+16,AS - Animal Vehicle Offences,CS - Emergency Management and Community Safety
+17,AS - Animal at Large,CS - Emergency Management and Community Safety
+18,AS - Dog Defecation,CS - Emergency Management and Community Safety
+19,AS - Excess Pet Concern,CS - Emergency Management and Community Safety
+20,AS - Excess Pet Permit,CS - Emergency Management and Community Safety
+21,AS - Human Injury,CS - Emergency Management and Community Safety
+22,AS - Livestock and Bird(s) in the City,CS - Emergency Management and Community Safety
+23,AS - No Control Dog in Off Leash Area,CS - Emergency Management and Community Safety
+24,AS - Pick Up Stray,CS - Emergency Management and Community Safety
+25,AS - Professional Dogwalker Permit,CS - Emergency Management and Community Safety
+26,AS - Rat Sighting,CS - Emergency Management and Community Safety
+27,AS - Unlicensed Animal,CS - Emergency Management and Community Safety
+28,AS - Urban Livestock Licenses and Permits,CS - Emergency Management and Community Safety
+29,AT - (PTAP) Property Tax Assistance Program Inquiry,CPFS - Assessment and Tax
+30,AT - Assessed Value,CPFS - Assessment and Tax
+31,AT - Assessment General Inquiry,CPFS - Assessment and Tax
+32,AT - Assessment Property Details,CPFS - Assessment and Tax
+33,AT - BIA Tax Account Inquiry,CPFS - Assessment and Tax
+34,AT - BTIPP Agreement Request,CPFS - Assessment and Tax
+35,AT - ONLINE Property Tax Document Request,CPFS - Assessment and Tax
+36,AT - ONLINE TIPP Information Request,CPFS - Assessment and Tax
+37,AT - Property Details,CPFS - Assessment and Tax
+38,AT - Property Tax Account Inquiry,CPFS - Assessment and Tax
+39,AT - Property Tax Bill and Statement Request,CPFS - Assessment and Tax
+40,AT - Property Tax Invoice and Charge Inquiry,CPFS - Assessment and Tax
+41,AT - Property Tax Payment Adjustments and Tax Programs,CPFS - Assessment and Tax
+42,AT - School Support Notice Document Request,CPFS - Assessment and Tax
+43,AT - TIPP Agreement Request,CPFS - Assessment and Tax
+44,AT - Tax Account Maintenance,CPFS - Assessment and Tax
+45,After Hours Transit - General Concerns,OS - Calgary Transit
+46,BIA Requests,CS - Partnerships
+47,Business Safety - Business Licence Concern - RMS,CS - Emergency Management and Community Safety
+48,Bylaw - Advocacy Sign Concerns,CS - Emergency Management and Community Safety
+49,Bylaw - Beyond the Badge Program Request,CS - Emergency Management and Community Safety
+50,Bylaw - Cannabis Concerns,CS - Emergency Management and Community Safety
+51,Bylaw - Disturbance and Behavioural Concerns,CS - Emergency Management and Community Safety
+52,Bylaw - Long Grass - Weeds Infraction,CS - Emergency Management and Community Safety
+53,Bylaw - Material on Public Property,CS - Emergency Management and Community Safety
+54,Bylaw - Noise Concerns,CS - Emergency Management and Community Safety
+55,Bylaw - Permit - Noise Exemption,CS - Emergency Management and Community Safety
+56,Bylaw - Property Maintenance Concerns,CS - Emergency Management and Community Safety
+57,Bylaw - Public Relations,CS - Emergency Management and Community Safety
+58,Bylaw - Snow and Ice on Sidewalk,CS - Emergency Management and Community Safety
+59,Bylaw - Spills Concerns,CS - Emergency Management and Community Safety
+60,Bylaw - Tree - Shrub Infraction,CS - Emergency Management and Community Safety
+61,Bylaw - Vandalism and Property Damage Concerns,CS - Emergency Management and Community Safety
+62,Bylaw - Vehicle Concerns,CS - Emergency Management and Community Safety
+63,Bylaw - Waste and Recycling Infractions,CS - Emergency Management and Community Safety
+64,Bylaw - Water Misuse / Wasting Concern,CS - Emergency Management and Community Safety
+65,Bylaw - Water Services Request,CS - Emergency Management and Community Safety
+66,CAI - Addressing Inquiry,"PICS - Collaboration, Analytics and Innovation"
+67,CAI - Block Profile Inquiry,"PICS - Collaboration, Analytics and Innovation"
+68,CAI - City Online - Concern,"PICS - Collaboration, Analytics and Innovation"
+69,CAI - City Online - Feedback Form Only,"PICS - Collaboration, Analytics and Innovation"
+70,CAI - Electronic Data Request,"PICS - Collaboration, Analytics and Innovation"
+71,CAI - GIS Mapping and Analysis Inquiry,"PICS - Collaboration, Analytics and Innovation"
+72,CAO - Chief Administrator's Office Inquiry,LLSS - Chief Administrators Office
+73,CE - Environmental Inquiries,PDS - Climate and Environment
+74,CE - Riparian - Riverbank Inquiries,PDS - Climate and Environment
+75,CE - Treatment Plant Tours,PDS - Climate and Environment
+76,CE - Water Brochure,PDS - Climate and Environment
+77,CE - Water Conservation Programs,PDS - Climate and Environment
+78,CE - Water Restrictions,PDS - Climate and Environment
+79,CE - Watershed,PDS - Climate and Environment
+80,CEMA - Non Emergency Request,CS - Emergency Management and Community Safety
+81,CFD - 100th Birthday Surprise,CS - Calgary Fire
+82,CFD - Building in Progress Inspection - FHB,CS - Calgary Fire
+83,CFD - Business Licence Inspection - FHB,CS - Calgary Fire
+84,CFD - Community Safety Inquiries,CS - Calgary Fire
+85,CFD - Compliments / Thank You / Recognition,CS - Calgary Fire
+86,CFD - Fire Code Hazard Complaint - FHB,CS - Calgary Fire
+87,CFD - Fire Code and General Inquiries - FHB,CS - Calgary Fire
+88,CFD - Fire Safety Plan Review - FHB,CS - Calgary Fire
+89,CFD - Fire Safety Presentation,CS - Calgary Fire
+90,CFD - Fire Station Tour,CS - Calgary Fire
+91,CFD - Fire Truck Booking,CS - Calgary Fire
+92,CFD - Fireworks Pyro Open Flame Blasting Inspection - FHB,CS - Calgary Fire
+93,CFD - Hazmat Inquiries,CS - Calgary Fire
+94,CFD - Incident Report Request,CS - Calgary Fire
+95,CFD - Invoice Inquiry,CS - Calgary Fire
+96,CFD - Land Search - Property Search,CS - Calgary Fire
+97,CFD - Life Safety Systems Inspection - FHB,CS - Calgary Fire
+98,CFD - Lockbox Inquiry - FHB,CS - Calgary Fire
+99,CFD - Lockbox Programming or Billing Concern,CS - Calgary Fire
+100,CFD - Missed Annual Inspection - FHB,CS - Calgary Fire
+101,CFD - Mobile Food Concession Inspection - FHB,CS - Calgary Fire
+102,CFD - Occupant Load Inspection - FHB,CS - Calgary Fire
+103,CFD - Pre-Purchase Insurance Inspection- FHB,CS - Calgary Fire
+104,CFD - Provincial Licence Inspection - FHB,CS - Calgary Fire
+105,CFD - Public Affairs Inquiries,CS - Calgary Fire
+106,CFD - Request to attend a Fire Drill - FHB,CS - Calgary Fire
+107,CFD - SCHOOL Fire Drill with Local Fire Station - ONLINE,CS - Calgary Fire
+108,CFD - Safe Housing - FHB,CS - Calgary Fire
+109,CFD - Smoke Alarm Inquiries - Asst. for Seniors/Disabled,CS - Calgary Fire
+110,CFD - Special Events Inspection - FHB,CS - Calgary Fire
+111,CFD - Tank Inspection - FHB,CS - Calgary Fire
+112,CFD - Technical Services Review - FHB,CS - Calgary Fire
+113,CHO - Affordable Housing,CEO - Chief Housing Office
+114,CHO - Affordable Housing,CS - Chief Housing Office
+115,CP - Community Planning - General Inquiries,PDS - Community Planning
+116,CP - Indemnification Agreements,PDS - Community Planning
+117,CP - Public Infrastructure Inquiry,PDS - Community Planning
+118,CP - Re-Use of Existing Site Services,PDS - Community Planning
+119,CP - Water Development Inquiry,PDS - Community Planning
+120,CPBS - Addressing Inquiry,IS - Capital Planning and Business Services
+121,CPBS - Bridge - Tunnel - Underpass Concern,IS - Capital Planning and Business Services
+122,CPBS - Plus 15 Skywalk,IS - Capital Planning and Business Services
+123,CPBS - Water and Sewer Main Condition Inquiries,IS - Capital Planning and Business Services
+124,CPBS - Wooden Stairs - Repairs,IS - Capital Planning and Business Services
+125,CRP - City and Regional Planning General Inquiries,PDS - City and Regional Planning
+126,CRP - Historical Hydrant Data or Flow Test,PDS - City and Regional Planning
+127,CSC - Calgary.ca Feedback and Issue Report,PICS - Customer Service and Communications
+128,CSC - Corporate Research Inquiry,PICS - Customer Service and Communications
+129,CT - Advertising and Communications,OS - Calgary Transit
+130,CT - Bikes on Transit,OS - Calgary Transit
+131,CT - Bus Route or Bus Schedule,OS - Calgary Transit
+132,CT - Bus Stops,OS - Calgary Transit
+133,CT - Bus or CTrain Vehicle Maintenance,OS - Calgary Transit
+134,CT - CTrain Schedule,OS - Calgary Transit
+135,CT - CTrain Stations,OS - Calgary Transit
+136,CT - Lost Property,OS - Calgary Transit
+137,CT - Park and Ride Lot - LRT or Bus,OS - Calgary Transit
+138,CT - Projects,OS - Calgary Transit
+139,CT - Snow and Ice Control,OS - Calgary Transit
+140,CT - Transit Pass Programs,OS - Calgary Transit
+141,CT - Transit Safety / Public Etiquette,OS - Calgary Transit
+142,CT AC - Activity Report - CTA INTERNAL,OS - Calgary Transit
+143,CT AC - Activity Report - Care Calgary INTERNAL,OSC - Calgary Transit
+144,CT AC - Activity Report - Checker INTERNAL,OSC - Calgary Transit
+145,CT AC - Activity Report - Southland INTERNAL,OSC - Calgary Transit
+146,CT AC - Trip Feedback - CTA,OS - Calgary Transit
+147,CT AC - Trip Feedback - Care Calgary,OSC - Calgary Transit
+148,CT AC - Trip Feedback - Checker Taxi,OSC - Calgary Transit
+149,CT AC - Trip Feedback - Southland,OSC - Calgary Transit
+150,Calgary Housing - General Inquiry,AO - Calgary Housing
+151,City Auditors - General Inquiries,Office of the City Auditor
+152,City Clerks - General Concerns,LLSS - City Clerk's Office
+153,City Clerks - Municipal Election Question,LLSS - City Clerk's Office
+154,City Clerks - Self-Guided Municipal Complex Tour,LLSS - City Clerk's Office
+155,Comm Strategies - Disability/Accessibility - Meeting & Eve,CS - Community Strategies
+156,Comm Strategies - Disability/Accessibility - Meeting & Event,CS - Community Strategies
+157,Comm Strategies - General Concerns,CS - Community Strategies
+158,Community Safety - Information Request,CS - Emergency Management and Community Safety
+159,Community Safety - Publications Request,CS - Emergency Management and Community Safety
+160,Corporate - Encampment Concerns,CS - Emergency Management and Community Safety
+161,Corporate - Graffiti Concerns,CS - Emergency Management and Community Safety
+162,Corporate Research Inquiry,PICS - 311 and Insights
+163,DBBS - Building Construction Concerns and Inquiries,"PDS - Development, Business and Building Services"
+164,DBBS - Code Inquiry,"PDS - Development, Business and Building Services"
+165,DBBS - Emergency Electrical Reconnection,"PDS - Development, Business and Building Services"
+166,DBBS - PRC - Property Research,"PDS - Development, Business and Building Services"
+167,DBBS - Planning and Development - After Hours SR,"PDS - Development, Business and Building Services"
+168,DBBS - RIM - Property Research,"PDS - Development, Business and Building Services"
+169,DBBS - SDI - New Subdivision Parks Inspection,"PDS - Development, Business and Building Services"
+170,DBBS - SDI - New Subdivision Surface Inspection,"PDS - Development, Business and Building Services"
+171,DBBS - SDI - Surface Indemnification Inspection,"PDS - Development, Business and Building Services"
+172,DBBS - SDI - Utility Inspection,"PDS - Development, Business and Building Services"
+173,DBBS - Safety Response,"PDS - Development, Business and Building Services"
+174,DBBS - Unsafe Derelict or Insecure Property,"PDS - Development, Business and Building Services"
+175,DBBS - Unsafe Derelict or Unsecure Property,"PDS - Development, Business and Building Services"
+176,DBBS - Urgent Safety Response,"PDS - Development, Business and Building Services"
+177,DBBS Concern - Building Without a Permit,"PDS - Development, Business and Building Services"
+178,DBBS Concern - Electrical,"PDS - Development, Business and Building Services"
+179,DBBS Concern - Heating and Ventilation,"PDS - Development, Business and Building Services"
+180,DBBS Concern - Plumbing and Gas,"PDS - Development, Business and Building Services"
+181,Downtown Strategy - General Inquiries,N/A
+182,Downtown Strategy - General Inquiries,PDS - Downtown Strategy
+183,ERR - Environmental Inquiries,PDS - Environmental Risk & Resilience
+184,ERR - Riparian - Riverbank Inquiries,PDS - Environmental Risk & Resilience
+185,ERR - Treatment Plant Tours,PDS - Environmental Risk & Resilience
+186,ERR - Water Brochure,PDS - Environmental Risk & Resilience
+187,ERR - Water Conservation Programs,PDS - Environmental Risk & Resilience
+188,ERR - Water Restrictions,PDS - Environmental Risk & Resilience
+189,ERR - Watering Schedule,PDS - Environmental Risk & Resilience
+190,ERR - Watershed,PDS - Environmental Risk & Resilience
+191,Facility Mgmt - FMCCC - Customer Care Centre,OS - Facility Management
+192,Filming and Movie and Drone Activities,OS - Operational Excellence
+193,Finance - Accounts Payable,CPFS - Finance
+194,Finance - Corporate Billing and eBill Inquiry,CPFS - Finance
+195,Finance - Credit and Collection Inquiries,CPFS - Finance
+196,Finance - ONLINE eBill Inquiry,CPFS - Finance
+197,Fleet and Inventory - Inquiry,OS - Fleet and Inventory
+198,GFL - Black Cart Collection,OSC - Waste and Recycling Services
+199,Green Line - Spill and Substance Release Report (X217),OSC - Greenline
+200,Green Line Inquiry,IS - Green Line LRT - SE Project
+201,HR - Recruitment and Program Inquiry,PICS - Human Resources
+202,IT - Block Profile Inquiry,PICS - Information Technology
+203,IT - City Fibre Request,PICS - Information Technology
+204,IT - City Online - Concern,PICS - Information Technology
+205,IT - Electronic Data Request,PICS - Information Technology
+206,IT - GIS Mapping and Analysis Inquiry,PICS - Information Technology
+207,IT - Public WiFi - Shaw Go WiFi at City Facilities,PICS - Information Technology
+208,LEAD Program Inquiry,CS - Recreation and Social Programs
+209,Law - General Concern - After Hours,LLSS - Law
+210,Law - Insurance and Claims,LLSS - Law
+211,Law - Risk Management and Claims,LLSS - Law
+212,MC - Calgary.ca Feedback and Issue Report,PICS - Marketing and Communication
+213,MC - calgary.ca Feedback,PICS - Marketing and Communication
+214,Mayors Office - Birthday or Anniversary Request,Elected Officials
+215,Mayors Office - Event Invitation,Elected Officials
+216,Mayors Office - General Concerns,Elected Officials
+217,Mayors Office - Meeting Request,Elected Officials
+218,Mayors Office - Neighbour Day Event Invite,Elected Officials
+219,Opinions on Business Units,Corporate Wide Service Requests
+220,PD - Future Road Planning and Upgrades,IS - Project Development
+221,PD - Neighbourhood Streets Projects,IS - Project Development
+222,PD - Noise Barrier Wall,IS - Project Development
+223,PSD - Annual Paving Program - Major Roads,IS - Public Spaces Delivery
+224,PSD - Backlane Paving Construction,IS - Public Spaces Delivery
+225,PSD - Bridges and Structures Inquiry,IS - Public Spaces Delivery
+226,PSD - Buildings - Architecture,IS - Public Spaces Delivery
+227,PSD - Downtown Major Projects,IS - Public Spaces Delivery
+228,PSD - Driveway Crossings - Curb Lowering,IS - Public Spaces Delivery
+229,PSD - Events Centre - Scotia Place,IS - Public Spaces Delivery
+230,PSD - Geotechnical Inquiry,IS - Public Spaces Delivery
+231,PSD - Local Improvement Inquiry,IS - Public Spaces Delivery
+232,PSD - Major Road Projects Inquiry,IS - Public Spaces Delivery
+233,PSD - Major Transit Projects Inquiry,IS - Public Spaces Delivery
+234,PSD - Parks and Open Spaces,IS - Public Spaces Delivery
+235,PSD - Transportation Special Projects,IS - Public Spaces Delivery
+236,PSD - Various Street Improvements - Current Projects,IS - Public Spaces Delivery
+237,Parks - Cemetery - Maintenance - GIS,OS - Parks and Open Spaces
+238,Parks - Community Inquiry,OS - Parks and Open Spaces
+239,Parks - Development - Tree Concern - GIS,OS - Parks and Open Spaces
+240,Parks - Garbage - GIS,OS - Parks and Open Spaces
+241,Parks - General Concerns,OS - Parks and Open Spaces
+242,Parks - Golf Course Inquiry,OS - Parks and Open Spaces
+243,Parks - Infrastructure - GIS,OS - Parks and Open Spaces
+244,Parks - Irrigation Line Location Request - GIS,OS - Parks and Open Spaces
+245,Parks - Irrigation Maintenance - GIS,OS - Parks and Open Spaces
+246,Parks - Lighting Concern - GIS,OS - Parks and Open Spaces
+247,Parks - Lost and Found - GIS,OS - Parks and Open Spaces
+248,Parks - Maintenance - GIS,OS - Parks and Open Spaces
+249,Parks - Mosquito Concerns,OS - Parks and Open Spaces
+250,Parks - Mowing Request - GIS,OS - Parks and Open Spaces
+251,Parks - NAM - Inactive Camp Clean Up - GIS INTERNAL,OS - Parks and Open Spaces
+252,Parks - Natural Area Inquiries - GIS,OS - Parks and Open Spaces
+253,Parks - Natural Area Maintenance - GIS,OS - Parks and Open Spaces
+254,Parks - Parks and Open Spaces Bookings,OS - Parks and Open Spaces
+255,Parks - Pest Concerns - GIS,OS - Parks and Open Spaces
+256,Parks - Pest Management,OS - Parks and Open Spaces
+257,Parks - Planning Inquiries,OS - Parks and Open Spaces
+258,Parks - PlayBins,OS - Parks and Open Spaces
+259,Parks - Playfield Usage Concerns,OS - Parks and Open Spaces
+260,Parks - Roadside Greens - GIS,OS - Parks and Open Spaces
+261,Parks - School Program Registration,OS - Parks and Open Spaces
+262,Parks - Seasonal Vendor Application,OS - Parks and Open Spaces
+263,Parks - Snow and Ice Concerns - GIS,OS - Parks and Open Spaces
+264,Parks - Tree Concern - GIS,OS - Parks and Open Spaces
+265,Parks - Tree Education Programs,OS - Parks and Open Spaces
+266,Parks - Tree Planting and Tree Watering Inquiries - GIS,OS - Parks and Open Spaces
+267,Parks - Venue Bookings and Inquiries,OS - Parks and Open Spaces
+268,Parks - Volunteer Request,OS - Parks and Open Spaces
+269,Parks - Weed Control Issues - GIS,OS - Parks and Open Spaces
+270,Parks - Wildlife Management,OS - Parks and Open Spaces
+271,Parks - Wildlife Sightings,OS - Parks and Open Spaces
+272,Partnerships - Community Association Inquiries,CS - Partnerships
+273,"Partnerships - Festival, Events and Cultural Development",CS - Partnerships
+274,Partnerships - Housing Solutions,CS - Partnerships
+275,Partnerships - Public Art,CS - Partnerships
+276,Partnerships - Sport and Facility Development,CS - Partnerships
+277,Project Development - Employee Complaint - Compliment,IS - Project Development
+278,Public - Municipal Complex - Atrium or Plaza Use Request,OS - Facility Management
+279,REDS - Acquisitions and Expropriations,IS - Real Estate and Development Services
+280,REDS - Development Project Inquiry,IS - Real Estate and Development Services
+281,REDS - Encroachment Agreements on City Land,IS - Real Estate and Development Services
+282,REDS - Property Leasing and Sales Inquiry,IS - Real Estate and Development Services
+283,RSP - Arena Inquiry,CS - Recreation and Social Programs
+284,RSP - Athletic Park Inquiry,CS - Recreation and Social Programs
+285,RSP - Booking Inquiry,CS - Recreation and Social Programs
+286,RSP - Calgary AfterSchool Program Inquires,CS - Recreation and Social Programs
+287,RSP - Calgary Soccer Centre Inquiry,CS - Recreation and Social Programs
+288,RSP - Free Summer Programs,CS - Recreation and Social Programs
+289,RSP - Glenmore Reservoir - Boat Dock/Storage Repair,CS - Recreation and Social Programs
+290,RSP - Glenmore Reservoir - Boat Rentals,CS - Recreation and Social Programs
+291,RSP - Glenmore Sailing School Inquiry,CS - Recreation and Social Programs
+292,RSP - Home Services for Seniors - Bylaw Concern,CS - Recreation and Social Programs
+293,RSP - Home Services for Seniors Inquiry,CS - Recreation and Social Programs
+294,RSP - Mobile Adventure Playground,CS - Recreation and Social Programs
+295,RSP - Pool - Administration Inquiry,CS - Recreation and Social Programs
+296,RSP - Pool - Bob Bahan,CS - Recreation and Social Programs
+297,RSP - Pool - Canyon Meadows,CS - Recreation and Social Programs
+298,RSP - Pool - Foothills,CS - Recreation and Social Programs
+299,RSP - Pool - Glenmore,CS - Recreation and Social Programs
+300,RSP - Pool - Inglewood,CS - Recreation and Social Programs
+301,RSP - Pool - Killarney,CS - Recreation and Social Programs
+302,RSP - Pool - Renfrew,CS - Recreation and Social Programs
+303,RSP - Pool - Shouldice,CS - Recreation and Social Programs
+304,RSP - Pool - Sir Winston Churchill,CS - Recreation and Social Programs
+305,RSP - Pool - Thornhill,CS - Recreation and Social Programs
+306,RSP - Program Registration Inquiry,CS - Recreation and Social Programs
+307,RSP - Registered Social Worker Letter,CS - Recreation and Social Programs
+308,RSP - Snow Angels Campaign,CS - Recreation and Social Programs
+309,RSP - Southland Leisure Centre Inquiry,CS - Recreation and Social Programs
+310,RSP - Sport Hub Inquiry,CS - Recreation and Social Programs
+311,RSP - Subsidized Programs - Fair Entry,CS - Recreation and Social Programs
+312,RSP - Village Square Leisure Centre Inquiry,CS - Recreation and Social Programs
+313,RSP - Volunteer Request,CS - Recreation and Social Programs
+314,Recreation - Arena Booking Application,CS - Recreation and Social Programs
+315,Recreation - Arena Meeting Room Application,CS - Recreation and Social Programs
+316,Recreation - Arena Tournament and Special Event Applicatio,CS - Recreation and Social Programs
+317,Recreation - Arena Tournament and Special Event Application,CS - Recreation and Social Programs
+318,Recreation - Athletic Park Booking Application,CS - Recreation and Social Programs
+319,Recreation - Boat Stall Application,CS - Recreation and Social Programs
+320,Recreation - LC - Gym/Room/Courts Booking Application,CS - Recreation and Social Programs
+321,Recreation - Playfield Booking Application,CS - Recreation and Social Programs
+322,Recreation - Pool Booking Application,CS - Recreation and Social Programs
+323,Recreation - Sailing School Application,CS - Recreation and Social Programs
+324,Recreation - School Connections Booking Application,CS - Recreation and Social Programs
+325,Recreation - School Facility Booking Application,CS - Recreation and Social Programs
+326,Recreation - Tennis / Pickleball Court Application,CS - Recreation and Social Programs
+327,Regulatory Affairs - General Inquiry,CPFS - Finance
+328,Roads - 5G Wireless Infrastructure Deployment Inquiry,OS - Mobility
+329,Roads - Adaptive Roadways and Seasonal Patio Programs,OS - Mobility
+330,Roads - BIA Maintenance,OS - Mobility
+331,Roads - Backlane Maintenance,OS - Mobility
+332,Roads - Bike Rack Request - NEW,OS - Mobility
+333,Roads - Dead Animal Pick-Up,OS - Mobility
+334,Roads - Debris on Street/Sidewalk/Boulevard,OS - Mobility
+335,Roads - Detour Inquiry,OS - Mobility
+336,Roads - Detour Urgent (Safety) Concerns,OS - Mobility
+337,Roads - E-Scooter,OS - Mobility
+338,Roads - Feedback - Community Traffic Safety Projects,OS - Mobility
+339,Roads - Fence - Noise Barrier - Retaining Wall Repair,OS - Mobility
+340,Roads - Load Ban and Overweight Vehicle on Road Inquiry,OS - Mobility
+341,Roads - NEW Sidewalk - Curb and Gutter Repair,OS - Mobility
+342,"Roads - NEW Signal, Left Turn or Pedestrian Light Request",OS - Mobility
+343,Roads - New Audible/Accessible Pedestrian Signal,OS - Mobility
+344,"Roads - New Signal, Left Turn or Pedestrian Light Request",OS - Mobility
+345,Roads - Pathway Concerns,OS - Mobility
+346,Roads - Pathway Snow and Ice Concerns,OS - Mobility
+347,Roads - Pavement Markings - Missing or Faded,OS - Mobility
+348,Roads - Permits - Requests and Inquiries,OS - Mobility
+349,Roads - Pothole Maintenance,OS - Mobility
+350,Roads - Repaving Candidate Street and Inquiries,OS - Mobility
+351,Roads - Roadway Maintenance,OS - Mobility
+352,Roads - Safety and Education,OS - Mobility
+353,Roads - Shared E-Bike,OS - Mobility
+354,Roads - Shared and Rental E-Bike Program,OS - Mobility
+355,Roads - Shared and Rental E-Scooter Program,OS - Mobility
+356,Roads - Sidewalk - Curb and Gutter Repair,OS - Mobility
+357,Roads - Sidewalk Installation and Accessibility,OS - Mobility
+358,Roads - Signs - Missing - Damaged,OS - Mobility
+359,Roads - Signs - Parking,OS - Mobility
+360,Roads - Signs - Traffic and Roadmarking,OS - Mobility
+361,Roads - Snow and Ice Control,OS - Mobility
+362,Roads - Street Cleaning Annual Program,OS - Mobility
+363,Roads - Street Paving Program,OS - Mobility
+364,Roads - Streetlight - General Inquiry,OS - Mobility
+365,Roads - Streetlight Damage,OS - Mobility
+366,Roads - Streetlight Maintenance,OS - Mobility
+367,Roads - Temporary Sign Removal,OS - Mobility
+368,Roads - Traffic Camera and ATIS Inquiries,OS - Mobility
+369,Roads - Traffic Control Change Feedback,OS - Mobility
+370,Roads - Traffic Operational Improvement Suggestions,OS - Mobility
+371,Roads - Traffic Signal Construction Inquiry,OS - Mobility
+372,Roads - Traffic Signal Lane Designation Sign,OS - Mobility
+373,Roads - Traffic Signal Operation Report - Intersection Pla,OS - Mobility
+374,Roads - Traffic Signal Operation Report - Intersection Plan,OS - Mobility
+375,Roads - Traffic Signal Timing Inquiry,OS - Mobility
+376,Roads - Traffic Vibration Concerns,OS - Mobility
+377,Roads - Traffic or Pedestrian Light Repair,OS - Mobility
+378,Roads - Transportation Data,OS - Mobility
+379,Roads - Utility Placement Inquiry,OS - Mobility
+380,Roads - Wheelchair Slope - Request For,OS - Mobility
+381,Stewardship of City Owned Land,IS - Real Estate and Development Services
+382,Supply - General Inquiries,CPFS - Supply Management
+383,UD - Corrosion - Digging Close to Critical Main,IS - Utilities Delivery
+384,UD - Major Projects Inquiry,IS - Utilities Delivery
+385,UEP - Odour Inquiries,OS - Water Services
+386,VFH - Taxi/Limousine/TNC (Ride Sharing) Compliment - RMS,CS - Emergency Management and Community Safety
+387,VFH - Taxi/Limousine/TNC (Ride Sharing) Concern - RMS,CS - Emergency Management and Community Safety
+388,WATS - Basement Seepage,OS - Water Services
+389,WATS - Bulk Water Accounts and Air Gap Vehicle Inspection,OS - Water Services
+390,WATS - Bulk Water Station Inquiries,OS - Water Services
+391,WATS - Catch Basin Concerns,OS - Water Services
+392,WATS - Construction Inquiry - MAX,OS - Water Services
+393,WATS - Cross Connection Inquiries,OS - Water Services
+394,WATS - Cross Connection Tester Support - ONLINE,OS - Water Services
+395,WATS - Developer Request for Parks Irrigation Meter,OS - Water Services
+396,WATS - Drainage Bylaw,OS - Water Services
+397,WATS - Drainage Concerns,OS - Water Services
+398,WATS - Emergency Water Temporary Off,OS - Water Services
+399,WATS - Erosion and Sediment Control,OS - Water Services
+400,WATS - Fire Hydrant,OS - Water Services
+401,WATS - Fire Hydrant Flow Test,OS - Water Services
+402,WATS - Flat to Meter Appointment,OS - Water Services
+403,WATS - Hydrant Connection Unit - HCU Inspections,OS - Water Services
+404,WATS - Industrial Monitoring Inquiry,OS - Water Services
+405,WATS - Location of Underground Water Lines - MAX,OS - Water Services
+406,WATS - Lot Grading,OS - Water Services
+407,WATS - Manhole Concerns,OS - Water Services
+408,WATS - Property Rehab,OS - Water Services
+409,WATS - Service and Main Valve Issues,OS - Water Services
+410,WATS - Sewage Back-up,OS - Water Services
+411,WATS - Sewer Maintenance,OS - Water Services
+412,WATS - Spills Entering Storm System,OS - Water Services
+413,WATS - Storm Pond Concerns,OS - Water Services
+414,WATS - Tap Water Sampling Program,OS - Water Services
+415,WATS - Temporary Water Line Issues,OS - Water Services
+416,WATS - Treatment Plant Tours,OS - Water Services
+417,WATS - Urgent Water Reconnect,OS - Water Services
+418,WATS - Wastewater Treatment Information,OS - Water Services
+419,WATS - Water Billing Concerns,OS - Water Services
+420,WATS - Water Data Request,OS - Water Services
+421,WATS - Water Equipment Pickup - MAX,OS - Water Services
+422,WATS - Water Main Break or Leak,OS - Water Services
+423,WATS - Water Meter Installation Request,OS - Water Services
+424,WATS - Water Meter Issues,OS - Water Services
+425,WATS - Water Off-On Appointment,OS - Water Services
+426,WATS - Water Outage,OS - Water Services
+427,WATS - Water Pressure Issues,OS - Water Services
+428,WATS - Water Quality,OS - Water Services
+429,WATS - Water Run Inquiry - MAX,OS - Water Services
+430,WATS - Water Service Fee Invoice,OS - Water Services
+431,WATS - Water Treatment Inquiries,OS - Water Services
+432,WATS - Water Wagon Issues,OS - Water Services
+433,WRS - Bin Checks,OS - Waste and Recycling Services
+434,WRS - Brochures,OS - Waste and Recycling Services
+435,WRS - Cart Management,OS - Waste and Recycling Services
+436,WRS - Collection Schedule Inquiry,OS - Waste and Recycling Services
+437,WRS - Commercial Collection Services,OS - Waste and Recycling Services
+438,WRS - Compost - Green Cart,OS - Waste and Recycling Services
+439,WRS - Debris in Backlane,OS - Waste and Recycling Services
+440,WRS - Disposal Guide Tool Feedback,OS - Waste and Recycling Services
+441,WRS - Education Inquiries,OS - Waste and Recycling Services
+442,WRS - Employee - Complaint Compliment,OS - Waste and Recycling Services
+443,WRS - Landfill - Accounts and Billing,OS - Waste and Recycling Services
+444,WRS - Landfill - Clean Fill,OS - Waste and Recycling Services
+445,WRS - Landfill - Disposal Information,OS - Waste and Recycling Services
+446,WRS - Landfill - Diversion Programs,OS - Waste and Recycling Services
+447,WRS - Landfill - Industrial Permit or Inquiry,OS - Waste and Recycling Services
+448,WRS - Landfill - Operations,OS - Waste and Recycling Services
+449,WRS - Multifamily Recycling and Composting,OS - Waste and Recycling Services
+450,WRS - New Service - Carts,OS - Waste and Recycling Services
+451,WRS - Programs,OS - Waste and Recycling Services
+452,WRS - Recycling - Blue Cart,OS - Waste and Recycling Services
+453,WRS - Recycling - Community,OS - Waste and Recycling Services
+454,WRS - Recycling - Depots,OS - Waste and Recycling Services
+455,WRS - School Landfill Tours Lottery,OS - Waste and Recycling Services
+456,WRS - Special Collection,OS - Waste and Recycling Services
+457,WRS - Waste - Residential,OS - Waste and Recycling Services
+458,WRS - Waste Requirements for Businesses,OS - Waste and Recycling Services

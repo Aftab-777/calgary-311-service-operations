@@ -1,0 +1,52 @@
+[
+  {
+    "field": "service_request_id",
+    "type": "text",
+    "description": "The unique identifier for an individual request."
+  },
+  {
+    "field": "requested_date",
+    "type": "calendar_date",
+    "description": "The date the request was submitted."
+  },
+  {
+    "field": "updated_date",
+    "type": "calendar_date",
+    "description": "The most recent date the request was updated."
+  },
+  {
+    "field": "closed_date",
+    "type": "calendar_date",
+    "description": "The date the request was closed."
+  },
+  {
+    "field": "status_description",
+    "type": "text",
+    "description": "The current status of the request (e.g. open, closed)."
+  },
+  {
+    "field": "source",
+    "type": "text",
+    "description": "The channel used to submit the request."
+  },
+  {
+    "field": "service_name",
+    "type": "text",
+    "description": "The type of service requested."
+  },
+  {
+    "field": "agency_responsible",
+    "type": "text",
+    "description": "The department responsible for this request."
+  },
+  {
+    "field": "comm_code",
+    "type": "text",
+    "description": "The community code associated with the service request location."
+  },
+  {
+    "field": "comm_name",
+    "type": "text",
+    "description": "The community name associated with the service request location."
+  }
+]

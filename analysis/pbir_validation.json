@@ -1,0 +1,6 @@
+{
+  "schema_files_checked": 59,
+  "official_schemas_loaded": 12,
+  "result": "passed",
+  "native_runtime": "Not executed; schema validation does not compile DAX, M, TMDL or render visuals."
+}

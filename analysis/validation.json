@@ -1,0 +1,13 @@
+{
+  "source_checksum": "passed",
+  "source_row_count": "passed",
+  "unique_request_ids": "passed",
+  "cohort_dates": "passed",
+  "sql_python_counts": "passed",
+  "sql_python_percentiles": "passed",
+  "sql_dimension_reconciliation": "passed",
+  "fact_rows": 385723,
+  "model_tables": 6,
+  "as_of_date": "2026-10-03",
+  "native_power_bi_runtime": "not executed in Power BI Desktop"
+}

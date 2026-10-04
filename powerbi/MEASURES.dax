@@ -1,0 +1,41 @@
+Source Records =
+COUNTROWS ( FactRequests )
+
+Duplicate Records =
+CALCULATE ( COUNTROWS ( FactRequests ), FactRequests[duplicate] = 1 )
+
+Requests =
+CALCULATE ( COUNTROWS ( FactRequests ), FactRequests[duplicate] = 0 )
+
+Open Requests =
+COALESCE ( CALCULATE ( COUNTROWS ( FactRequests ), FactRequests[is_open] = 1 ), 0 )
+
+Closed Requests =
+COALESCE ( CALCULATE ( COUNTROWS ( FactRequests ), FactRequests[is_closed] = 1 ), 0 )
+
+Valid Closure Sample =
+COUNT ( FactRequests[closure_days] )
+
+Median Closure Days =
+MEDIAN ( FactRequests[closure_days] )
+
+P90 Closure Days =
+PERCENTILEX.INC ( FILTER ( FactRequests, NOT ISBLANK ( FactRequests[closure_days] ) ), FactRequests[closure_days], 0.9 )
+
+Median Open Age Days =
+MEDIAN ( FactRequests[age_days] )
+
+Open 30 Plus Days =
+COALESCE ( CALCULATE ( COUNTROWS ( FactRequests ), FactRequests[is_open] = 1, FactRequests[age_days] >= 30 ), 0 )
+
+Missing Closure Dates =
+SUM ( FactRequests[missing_closed] )
+
+Invalid Closure Dates =
+SUM ( FactRequests[invalid_closed] )
+
+Open With Closure Date =
+SUM ( FactRequests[open_with_closed] )
+
+Unknown Status Records =
+SUM ( FactRequests[unknown_status] )

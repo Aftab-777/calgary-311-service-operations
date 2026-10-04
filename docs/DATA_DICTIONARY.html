@@ -1,0 +1,164 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Data dictionary</title><style>body{max-width:960px;margin:0 auto;padding:45px 25px;font:17px/1.65 system-ui,Segoe UI,sans-serif;color:#202b30;background:#fff}h1{font-size:38px;line-height:1.15}h2{font-size:25px;margin-top:45px}h3{font-size:19px;margin:28px 0 8px}h1,h2,h3{color:#000}a{color:#086963}img{display:block;max-width:100%;height:auto;border:1px solid #ddd}figure{margin:30px 0}figcaption,.meta{font-size:14px;color:#546164}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:18px;background:#f5f6f6;font:14px/1.6 Consolas,monospace}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid #d9d9d9;padding:12px;text-align:left}th{background:#e9eef0}nav a{margin-right:18px}li{margin:8px 0}@media print{body{padding:0;font-size:11pt}h2{break-after:avoid}pre,figure{break-inside:avoid}nav{display:none}@page{size:letter;margin:.75in}}</style><body><nav><a href="../dashboard/index.html">Dashboard</a><a href="GUIDE.html">Project guide</a></nav><h1>Data dictionary</h1>
+<h2>Selected source columns</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Meaning and treatment</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>service_request_id</code></td>
+<td>Source request identifier; asserted unique in this cohort; retained as text</td>
+</tr>
+<tr>
+<td><code>requested_date</code></td>
+<td>Submission timestamp; calendar date drives cohort, date dimension and duration start</td>
+</tr>
+<tr>
+<td><code>updated_date</code></td>
+<td>Source record update timestamp; preserved in raw input, not used as a closure proxy</td>
+</tr>
+<tr>
+<td><code>closed_date</code></td>
+<td>Administrative closure timestamp; may be blank or contradict Open status</td>
+</tr>
+<tr>
+<td><code>status_description</code></td>
+<td>Open, Closed or explicit duplicate status; determines flags</td>
+</tr>
+<tr>
+<td><code>source</code></td>
+<td>Submission channel as supplied; Other is not interpreted as phone</td>
+</tr>
+<tr>
+<td><code>service_name</code></td>
+<td>Source category label; preserved without speculative consolidation</td>
+</tr>
+<tr>
+<td><code>agency_responsible</code></td>
+<td>Source agency; paired with service label to define service dimension grain</td>
+</tr>
+<tr>
+<td><code>comm_code</code></td>
+<td>Community code; missing values become Unknown in model</td>
+</tr>
+<tr>
+<td><code>comm_name</code></td>
+<td>Community name; paired with code; missing values become Unknown</td>
+</tr>
+</tbody></table>
+<p>The selected official metadata is saved in <code>data/source_schema.json</code>. Additional source fields, including addresses and exact coordinates, are not downloaded.</p>
+<h2>Fact table columns</h2>
+<table>
+<thead>
+<tr>
+<th>Column</th>
+<th>Type</th>
+<th>Definition</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>request_id</code></td>
+<td>Text</td>
+<td>Source request ID</td>
+</tr>
+<tr>
+<td><code>requested_date</code>, <code>closed_date</code></td>
+<td>Date</td>
+<td>Parsed calendar dates; closure can be blank</td>
+</tr>
+<tr>
+<td><code>service_key</code>, <code>channel_key</code>, <code>community_key</code></td>
+<td>Integer</td>
+<td>Keys to related dimensions</td>
+</tr>
+<tr>
+<td><code>status</code></td>
+<td>Text</td>
+<td>Source status</td>
+</tr>
+<tr>
+<td><code>duplicate</code></td>
+<td>0 or 1</td>
+<td>Explicit duplicate status</td>
+</tr>
+<tr>
+<td><code>is_open</code>, <code>is_closed</code></td>
+<td>0 or 1</td>
+<td>Respective nonduplicate status with valid submission date</td>
+</tr>
+<tr>
+<td><code>closure_days</code></td>
+<td>Nullable integer</td>
+<td>Valid closed duration; null for Open and duplicate records</td>
+</tr>
+<tr>
+<td><code>age_days</code></td>
+<td>Nullable integer</td>
+<td>Snapshot age for Open records only</td>
+</tr>
+<tr>
+<td><code>invalid_closed</code></td>
+<td>0 or 1</td>
+<td>Closure before submission, after snapshot or unreadable</td>
+</tr>
+<tr>
+<td><code>missing_closed</code></td>
+<td>0 or 1</td>
+<td>Closed status without closure date</td>
+</tr>
+<tr>
+<td><code>invalid_requested</code></td>
+<td>0 or 1</td>
+<td>Submission unreadable or after snapshot</td>
+</tr>
+<tr>
+<td><code>unknown_status</code></td>
+<td>0 or 1</td>
+<td>Status outside four expected values</td>
+</tr>
+<tr>
+<td><code>open_with_closed</code></td>
+<td>0 or 1</td>
+<td>Open record also contains a closure-date field</td>
+</tr>
+</tbody></table>
+<p>Blank CSV values are converted to null before native model type conversion. Counts and flags have no implicit summarization in model metadata; explicit measures control aggregation.</p>
+<h2>Dimensions and metadata</h2>
+<table>
+<thead>
+<tr>
+<th>Table</th>
+<th>Grain</th>
+<th>Join</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>DimService</code></td>
+<td>Service label and agency</td>
+<td>service_key</td>
+</tr>
+<tr>
+<td><code>DimChannel</code></td>
+<td>Source channel label</td>
+<td>channel_key</td>
+</tr>
+<tr>
+<td><code>DimCommunity</code></td>
+<td>Community code and name</td>
+<td>community_key</td>
+</tr>
+<tr>
+<td><code>DimDate</code></td>
+<td>Every calendar day in submission cohort</td>
+<td>date to requested_date</td>
+</tr>
+<tr>
+<td><code>Snapshot</code></td>
+<td>One snapshot metadata row</td>
+<td>Disconnected</td>
+</tr>
+</tbody></table>
+<p><code>DimDate</code> also contains year-month text, weekday name and Monday-based weekday order. <code>Snapshot</code> records as-of date, cohort start and exclusive end. <code>data/manifest.json</code> contains provenance, exact query, selected columns, timestamps, checksum and licence.</p>
+</body></html>

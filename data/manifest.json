@@ -1,0 +1,29 @@
+{
+  "dataset": "City of Calgary 311 Service Requests",
+  "dataset_id": "iahh-g8bj",
+  "source_url": "https://data.calgary.ca/Services-and-Amenities/311-Service-Requests/iahh-g8bj",
+  "endpoint": "https://data.calgary.ca/resource/iahh-g8bj.json",
+  "filter": "requested_date >= '2026-01-01T00:00:00' AND requested_date < '2026-10-01T00:00:00'",
+  "cohort_start": "2026-01-01",
+  "cohort_end_exclusive": "2026-10-01",
+  "retrieved_at_utc": "2026-10-04T04:29:29.364Z",
+  "source_updated_at_utc": "2026-10-03T17:01:14.000Z",
+  "row_count": 385723,
+  "columns": [
+    "service_request_id",
+    "requested_date",
+    "updated_date",
+    "closed_date",
+    "status_description",
+    "source",
+    "service_name",
+    "agency_responsible",
+    "comm_code",
+    "comm_name"
+  ],
+  "sha256": "c646754c9bbe05a4d9a35dfa828818d6d1d8be0ccfc6f3ac03fd3ec8447fd5a9",
+  "licence_url": "https://data.calgary.ca/stories/s/u45n-7awa/",
+  "attribution": "Contains information licensed under the Open Government Licence – City of Calgary.",
+  "privacy": "Street addresses, coordinates, point geometry and personal details are not requested.",
+  "as_of_date": "2026-10-03"
+}

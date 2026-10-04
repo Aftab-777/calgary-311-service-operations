@@ -1,0 +1,4319 @@
+{
+  "manifest": {
+    "dataset": "City of Calgary 311 Service Requests",
+    "dataset_id": "iahh-g8bj",
+    "source_url": "https://data.calgary.ca/Services-and-Amenities/311-Service-Requests/iahh-g8bj",
+    "endpoint": "https://data.calgary.ca/resource/iahh-g8bj.json",
+    "filter": "requested_date >= '2026-01-01T00:00:00' AND requested_date < '2026-10-01T00:00:00'",
+    "cohort_start": "2026-01-01",
+    "cohort_end_exclusive": "2026-10-01",
+    "retrieved_at_utc": "2026-10-04T04:29:29.364Z",
+    "source_updated_at_utc": "2026-10-03T17:01:14.000Z",
+    "row_count": 385723,
+    "columns": [
+      "service_request_id",
+      "requested_date",
+      "updated_date",
+      "closed_date",
+      "status_description",
+      "source",
+      "service_name",
+      "agency_responsible",
+      "comm_code",
+      "comm_name"
+    ],
+    "sha256": "c646754c9bbe05a4d9a35dfa828818d6d1d8be0ccfc6f3ac03fd3ec8447fd5a9",
+    "licence_url": "https://data.calgary.ca/stories/s/u45n-7awa/",
+    "attribution": "Contains information licensed under the Open Government Licence – City of Calgary.",
+    "privacy": "Street addresses, coordinates, point geometry and personal details are not requested.",
+    "as_of_date": "2026-10-03"
+  },
+  "metrics": {
+    "total": 385723,
+    "duplicates": 3800,
+    "operational": 381923,
+    "open": 25636,
+    "closed": 356287,
+    "closure_valid": 356287,
+    "median_closure": 2.0,
+    "p90_closure": 21.0,
+    "median_open_age": 67.0,
+    "open_30_plus": 17898
+  },
+  "status_counts": {
+    "Closed": 356287,
+    "Duplicate (Closed)": 3319,
+    "Open": 25636,
+    "Duplicate (Open)": 481
+  },
+  "quality": {
+    "invalid_closed": 0,
+    "missing_closed": 0,
+    "invalid_requested": 0,
+    "unknown_status": 0,
+    "open_with_closed": 1621,
+    "missing_service_name": 0,
+    "missing_source": 0,
+    "missing_comm_code": 24237,
+    "missing_agency_responsible": 0
+  },
+  "sql_results": {
+    "summary": [
+      {
+        "total": 385723,
+        "duplicates": 3800,
+        "operational": 381923,
+        "open": 25636,
+        "closed": 356287,
+        "closure_valid": 356287,
+        "open_30_plus": 17898
+      }
+    ],
+    "monthly": [
+      {
+        "month": "2026-01",
+        "requests": 35346,
+        "open_at_snapshot": 731,
+        "closed_at_snapshot": 34615,
+        "previous_month_requests": null
+      },
+      {
+        "month": "2026-02",
+        "requests": 30862,
+        "open_at_snapshot": 829,
+        "closed_at_snapshot": 30033,
+        "previous_month_requests": 35346
+      },
+      {
+        "month": "2026-03",
+        "requests": 35495,
+        "open_at_snapshot": 1158,
+        "closed_at_snapshot": 34337,
+        "previous_month_requests": 30862
+      },
+      {
+        "month": "2026-04",
+        "requests": 40391,
+        "open_at_snapshot": 1863,
+        "closed_at_snapshot": 38528,
+        "previous_month_requests": 35495
+      },
+      {
+        "month": "2026-05",
+        "requests": 47467,
+        "open_at_snapshot": 2674,
+        "closed_at_snapshot": 44793,
+        "previous_month_requests": 40391
+      },
+      {
+        "month": "2026-06",
+        "requests": 54163,
+        "open_at_snapshot": 2819,
+        "closed_at_snapshot": 51344,
+        "previous_month_requests": 47467
+      },
+      {
+        "month": "2026-07",
+        "requests": 52529,
+        "open_at_snapshot": 3127,
+        "closed_at_snapshot": 49402,
+        "previous_month_requests": 54163
+      },
+      {
+        "month": "2026-08",
+        "requests": 44973,
+        "open_at_snapshot": 3909,
+        "closed_at_snapshot": 41064,
+        "previous_month_requests": 52529
+      },
+      {
+        "month": "2026-09",
+        "requests": 40697,
+        "open_at_snapshot": 8526,
+        "closed_at_snapshot": 32171,
+        "previous_month_requests": 44973
+      }
+    ],
+    "services": [
+      {
+        "service_name": "WRS - Cart Management",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 23352,
+        "open_at_snapshot": 42,
+        "closure_sample": 23310,
+        "mean_closure_days": 3.22,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Tree Concern - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 12908,
+        "open_at_snapshot": 836,
+        "closure_sample": 12072,
+        "mean_closure_days": 10.28,
+        "open_30_plus": 384
+      },
+      {
+        "service_name": "Corporate - Graffiti Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 11034,
+        "open_at_snapshot": 529,
+        "closure_sample": 10505,
+        "mean_closure_days": 10.54,
+        "open_30_plus": 327
+      },
+      {
+        "service_name": "Bylaw - Long Grass - Weeds Infraction",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 9984,
+        "open_at_snapshot": 867,
+        "closure_sample": 9117,
+        "mean_closure_days": 27.03,
+        "open_30_plus": 411
+      },
+      {
+        "service_name": "WRS - Recycling - Blue Cart",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 9265,
+        "open_at_snapshot": 2,
+        "closure_sample": 9263,
+        "mean_closure_days": 1.44,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Waste - Residential",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 9215,
+        "open_at_snapshot": 4,
+        "closure_sample": 9211,
+        "mean_closure_days": 1.62,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Bylaw - Material on Public Property",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 7811,
+        "open_at_snapshot": 578,
+        "closure_sample": 7233,
+        "mean_closure_days": 10.6,
+        "open_30_plus": 345
+      },
+      {
+        "service_name": "AT - Property Tax Account Inquiry",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 7326,
+        "open_at_snapshot": 0,
+        "closure_sample": 7326,
+        "mean_closure_days": 2.81,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AT - Assessed Value",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 7294,
+        "open_at_snapshot": 11,
+        "closure_sample": 7283,
+        "mean_closure_days": 8.0,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Roads - Pothole Maintenance",
+        "agency": "OS - Mobility",
+        "requests": 7117,
+        "open_at_snapshot": 267,
+        "closure_sample": 6850,
+        "mean_closure_days": 3.44,
+        "open_30_plus": 224
+      },
+      {
+        "service_name": "WRS - Compost - Green Cart",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 6847,
+        "open_at_snapshot": 2,
+        "closure_sample": 6845,
+        "mean_closure_days": 1.51,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - New Service - Carts",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 6128,
+        "open_at_snapshot": 18,
+        "closure_sample": 6110,
+        "mean_closure_days": 2.41,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Bylaw - Snow and Ice on Sidewalk",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 6007,
+        "open_at_snapshot": 24,
+        "closure_sample": 5983,
+        "mean_closure_days": 6.72,
+        "open_30_plus": 24
+      },
+      {
+        "service_name": "Roads - Debris on Street/Sidewalk/Boulevard",
+        "agency": "OS - Mobility",
+        "requests": 5869,
+        "open_at_snapshot": 752,
+        "closure_sample": 5117,
+        "mean_closure_days": 6.03,
+        "open_30_plus": 662
+      },
+      {
+        "service_name": "Bylaw - Noise Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 5583,
+        "open_at_snapshot": 399,
+        "closure_sample": 5184,
+        "mean_closure_days": 10.51,
+        "open_30_plus": 261
+      },
+      {
+        "service_name": "Corporate - Encampment Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 5371,
+        "open_at_snapshot": 325,
+        "closure_sample": 5046,
+        "mean_closure_days": 5.59,
+        "open_30_plus": 171
+      },
+      {
+        "service_name": "Roads - Signs - Missing - Damaged",
+        "agency": "OS - Mobility",
+        "requests": 5358,
+        "open_at_snapshot": 2746,
+        "closure_sample": 2612,
+        "mean_closure_days": 13.77,
+        "open_30_plus": 2502
+      },
+      {
+        "service_name": "RSP - Subsidized Programs - Fair Entry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 5323,
+        "open_at_snapshot": 92,
+        "closure_sample": 5231,
+        "mean_closure_days": 7.71,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "AT - Property Tax Bill and Statement Request",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 5065,
+        "open_at_snapshot": 63,
+        "closure_sample": 5002,
+        "mean_closure_days": 2.23,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "Roads - Dead Animal Pick-Up",
+        "agency": "OS - Mobility",
+        "requests": 5018,
+        "open_at_snapshot": 13,
+        "closure_sample": 5005,
+        "mean_closure_days": 0.12,
+        "open_30_plus": 10
+      },
+      {
+        "service_name": "WATS - Sewage Back-up",
+        "agency": "OS - Water Services",
+        "requests": 4406,
+        "open_at_snapshot": 2,
+        "closure_sample": 4404,
+        "mean_closure_days": 0.38,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Garbage - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 4217,
+        "open_at_snapshot": 31,
+        "closure_sample": 4186,
+        "mean_closure_days": 3.81,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "WRS - Debris in Backlane",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 4087,
+        "open_at_snapshot": 3,
+        "closure_sample": 4084,
+        "mean_closure_days": 2.38,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Backlane Maintenance",
+        "agency": "OS - Mobility",
+        "requests": 3983,
+        "open_at_snapshot": 822,
+        "closure_sample": 3161,
+        "mean_closure_days": 14.22,
+        "open_30_plus": 680
+      },
+      {
+        "service_name": "Bylaw - Disturbance and Behavioural Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 3911,
+        "open_at_snapshot": 958,
+        "closure_sample": 2953,
+        "mean_closure_days": 6.22,
+        "open_30_plus": 740
+      },
+      {
+        "service_name": "Roads - Snow and Ice Control",
+        "agency": "OS - Mobility",
+        "requests": 3604,
+        "open_at_snapshot": 98,
+        "closure_sample": 3506,
+        "mean_closure_days": 1.21,
+        "open_30_plus": 98
+      },
+      {
+        "service_name": "GFL - Black Cart Collection",
+        "agency": "OSC - Waste and Recycling Services",
+        "requests": 3531,
+        "open_at_snapshot": 12,
+        "closure_sample": 3519,
+        "mean_closure_days": 2.65,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Roadway Maintenance",
+        "agency": "OS - Mobility",
+        "requests": 3418,
+        "open_at_snapshot": 706,
+        "closure_sample": 2712,
+        "mean_closure_days": 9.35,
+        "open_30_plus": 629
+      },
+      {
+        "service_name": "WATS - Sewer Maintenance",
+        "agency": "OS - Water Services",
+        "requests": 3305,
+        "open_at_snapshot": 138,
+        "closure_sample": 3167,
+        "mean_closure_days": 13.68,
+        "open_30_plus": 11
+      },
+      {
+        "service_name": "CFD - Business Licence Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 3254,
+        "open_at_snapshot": 174,
+        "closure_sample": 3080,
+        "mean_closure_days": 12.29,
+        "open_30_plus": 87
+      },
+      {
+        "service_name": "Roads - Traffic or Pedestrian Light Repair",
+        "agency": "OS - Mobility",
+        "requests": 3198,
+        "open_at_snapshot": 6,
+        "closure_sample": 3192,
+        "mean_closure_days": 0.58,
+        "open_30_plus": 5
+      },
+      {
+        "service_name": "WRS - Commercial Collection Services",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 3104,
+        "open_at_snapshot": 7,
+        "closure_sample": 3097,
+        "mean_closure_days": 1.44,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Sidewalk - Curb and Gutter Repair",
+        "agency": "OS - Mobility",
+        "requests": 3041,
+        "open_at_snapshot": 1404,
+        "closure_sample": 1637,
+        "mean_closure_days": 7.06,
+        "open_30_plus": 1404
+      },
+      {
+        "service_name": "CT - Bus Stops",
+        "agency": "OS - Calgary Transit",
+        "requests": 3029,
+        "open_at_snapshot": 422,
+        "closure_sample": 2607,
+        "mean_closure_days": 16.72,
+        "open_30_plus": 223
+      },
+      {
+        "service_name": "CT - Bus Route or Bus Schedule",
+        "agency": "OS - Calgary Transit",
+        "requests": 3008,
+        "open_at_snapshot": 445,
+        "closure_sample": 2563,
+        "mean_closure_days": 20.54,
+        "open_30_plus": 108
+      },
+      {
+        "service_name": "Bylaw - Tree - Shrub Infraction",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 2891,
+        "open_at_snapshot": 432,
+        "closure_sample": 2459,
+        "mean_closure_days": 15.43,
+        "open_30_plus": 300
+      },
+      {
+        "service_name": "Bylaw - Waste and Recycling Infractions",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 2866,
+        "open_at_snapshot": 143,
+        "closure_sample": 2723,
+        "mean_closure_days": 8.65,
+        "open_30_plus": 74
+      },
+      {
+        "service_name": "Roads - Signs - Traffic and Roadmarking",
+        "agency": "OS - Mobility",
+        "requests": 2820,
+        "open_at_snapshot": 1357,
+        "closure_sample": 1463,
+        "mean_closure_days": 17.45,
+        "open_30_plus": 1101
+      },
+      {
+        "service_name": "Roads - Streetlight Maintenance",
+        "agency": "OS - Mobility",
+        "requests": 2692,
+        "open_at_snapshot": 7,
+        "closure_sample": 2685,
+        "mean_closure_days": 2.1,
+        "open_30_plus": 5
+      },
+      {
+        "service_name": "WRS - Programs",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 2629,
+        "open_at_snapshot": 19,
+        "closure_sample": 2610,
+        "mean_closure_days": 1.9,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Temporary Sign Removal",
+        "agency": "OS - Mobility",
+        "requests": 2609,
+        "open_at_snapshot": 113,
+        "closure_sample": 2496,
+        "mean_closure_days": 10.86,
+        "open_30_plus": 10
+      },
+      {
+        "service_name": "AT - Property Tax Invoice and Charge Inquiry",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 2581,
+        "open_at_snapshot": 47,
+        "closure_sample": 2534,
+        "mean_closure_days": 4.35,
+        "open_30_plus": 16
+      },
+      {
+        "service_name": "CT - Lost Property",
+        "agency": "OS - Calgary Transit",
+        "requests": 2580,
+        "open_at_snapshot": 133,
+        "closure_sample": 2447,
+        "mean_closure_days": 8.31,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "Roads - Signs - Parking",
+        "agency": "OS - Mobility",
+        "requests": 2482,
+        "open_at_snapshot": 683,
+        "closure_sample": 1799,
+        "mean_closure_days": 14.3,
+        "open_30_plus": 519
+      },
+      {
+        "service_name": "Roads - Traffic Signal Timing Inquiry",
+        "agency": "OS - Mobility",
+        "requests": 2463,
+        "open_at_snapshot": 27,
+        "closure_sample": 2436,
+        "mean_closure_days": 3.03,
+        "open_30_plus": 16
+      },
+      {
+        "service_name": "AS - Animal at Large",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 2394,
+        "open_at_snapshot": 58,
+        "closure_sample": 2336,
+        "mean_closure_days": 3.86,
+        "open_30_plus": 29
+      },
+      {
+        "service_name": "WATS - Catch Basin Concerns",
+        "agency": "OS - Water Services",
+        "requests": 2373,
+        "open_at_snapshot": 22,
+        "closure_sample": 2351,
+        "mean_closure_days": 4.05,
+        "open_30_plus": 9
+      },
+      {
+        "service_name": "DBBS - PRC - Property Research",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 2334,
+        "open_at_snapshot": 740,
+        "closure_sample": 1594,
+        "mean_closure_days": 37.74,
+        "open_30_plus": 324
+      },
+      {
+        "service_name": "WATS - Water Meter Issues",
+        "agency": "OS - Water Services",
+        "requests": 2330,
+        "open_at_snapshot": 113,
+        "closure_sample": 2217,
+        "mean_closure_days": 8.13,
+        "open_30_plus": 9
+      },
+      {
+        "service_name": "Parks - Infrastructure - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 2269,
+        "open_at_snapshot": 39,
+        "closure_sample": 2230,
+        "mean_closure_days": 5.22,
+        "open_30_plus": 8
+      },
+      {
+        "service_name": "AS - Pick Up Stray",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 2112,
+        "open_at_snapshot": 10,
+        "closure_sample": 2102,
+        "mean_closure_days": 0.26,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "DBBS - RIM - Property Research",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 2104,
+        "open_at_snapshot": 4,
+        "closure_sample": 2100,
+        "mean_closure_days": 32.35,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "Roads - Pathway Concerns",
+        "agency": "OS - Mobility",
+        "requests": 2097,
+        "open_at_snapshot": 8,
+        "closure_sample": 2089,
+        "mean_closure_days": 3.98,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "WATS - Service and Main Valve Issues",
+        "agency": "OS - Water Services",
+        "requests": 2094,
+        "open_at_snapshot": 355,
+        "closure_sample": 1739,
+        "mean_closure_days": 52.11,
+        "open_30_plus": 229
+      },
+      {
+        "service_name": "Parks - Wildlife Sightings",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 2068,
+        "open_at_snapshot": 2,
+        "closure_sample": 2066,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "Parks - Maintenance - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 2039,
+        "open_at_snapshot": 20,
+        "closure_sample": 2019,
+        "mean_closure_days": 5.13,
+        "open_30_plus": 6
+      },
+      {
+        "service_name": "Bylaw - Vehicle Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 1996,
+        "open_at_snapshot": 943,
+        "closure_sample": 1053,
+        "mean_closure_days": 13.61,
+        "open_30_plus": 772
+      },
+      {
+        "service_name": "AS - Animal Noise",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 1870,
+        "open_at_snapshot": 29,
+        "closure_sample": 1841,
+        "mean_closure_days": 3.08,
+        "open_30_plus": 23
+      },
+      {
+        "service_name": "Parks - Wildlife Management",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 1852,
+        "open_at_snapshot": 2,
+        "closure_sample": 1850,
+        "mean_closure_days": 0.96,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Tree Planting and Tree Watering Inquiries - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 1828,
+        "open_at_snapshot": 128,
+        "closure_sample": 1700,
+        "mean_closure_days": 10.13,
+        "open_30_plus": 73
+      },
+      {
+        "service_name": "CT - Transit Pass Programs",
+        "agency": "OS - Calgary Transit",
+        "requests": 1823,
+        "open_at_snapshot": 9,
+        "closure_sample": 1814,
+        "mean_closure_days": 13.89,
+        "open_30_plus": 5
+      },
+      {
+        "service_name": "Roads - Detour Inquiry",
+        "agency": "OS - Mobility",
+        "requests": 1795,
+        "open_at_snapshot": 22,
+        "closure_sample": 1773,
+        "mean_closure_days": 3.75,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "Recreation - School Facility Booking Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 1748,
+        "open_at_snapshot": 92,
+        "closure_sample": 1656,
+        "mean_closure_days": 20.35,
+        "open_30_plus": 49
+      },
+      {
+        "service_name": "Community Safety - Information Request",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 1746,
+        "open_at_snapshot": 99,
+        "closure_sample": 1647,
+        "mean_closure_days": 8.22,
+        "open_30_plus": 52
+      },
+      {
+        "service_name": "Opinions on Business Units",
+        "agency": "Corporate Wide Service Requests",
+        "requests": 1700,
+        "open_at_snapshot": 13,
+        "closure_sample": 1687,
+        "mean_closure_days": 0.53,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "Roads - Pathway Snow and Ice Concerns",
+        "agency": "OS - Mobility",
+        "requests": 1634,
+        "open_at_snapshot": 0,
+        "closure_sample": 1634,
+        "mean_closure_days": 5.24,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Mowing Request - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 1520,
+        "open_at_snapshot": 9,
+        "closure_sample": 1511,
+        "mean_closure_days": 5.03,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "Bylaw - Property Maintenance Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 1512,
+        "open_at_snapshot": 120,
+        "closure_sample": 1392,
+        "mean_closure_days": 12.4,
+        "open_30_plus": 77
+      },
+      {
+        "service_name": "Parks - Venue Bookings and Inquiries",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 1428,
+        "open_at_snapshot": 7,
+        "closure_sample": 1421,
+        "mean_closure_days": 3.56,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - NEW Sidewalk - Curb and Gutter Repair",
+        "agency": "OS - Mobility",
+        "requests": 1421,
+        "open_at_snapshot": 951,
+        "closure_sample": 470,
+        "mean_closure_days": 13.94,
+        "open_30_plus": 653
+      },
+      {
+        "service_name": "CT AC - Activity Report - CTA INTERNAL",
+        "agency": "OS - Calgary Transit",
+        "requests": 1418,
+        "open_at_snapshot": 8,
+        "closure_sample": 1410,
+        "mean_closure_days": 1.75,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "WATS - Water Main Break or Leak",
+        "agency": "OS - Water Services",
+        "requests": 1414,
+        "open_at_snapshot": 10,
+        "closure_sample": 1404,
+        "mean_closure_days": 0.19,
+        "open_30_plus": 9
+      },
+      {
+        "service_name": "Recreation - Arena Booking Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 1384,
+        "open_at_snapshot": 9,
+        "closure_sample": 1375,
+        "mean_closure_days": 5.67,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "Parks - Natural Area Maintenance - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 1367,
+        "open_at_snapshot": 21,
+        "closure_sample": 1346,
+        "mean_closure_days": 5.99,
+        "open_30_plus": 5
+      },
+      {
+        "service_name": "Roads - Detour Urgent (Safety) Concerns",
+        "agency": "OS - Mobility",
+        "requests": 1345,
+        "open_at_snapshot": 14,
+        "closure_sample": 1331,
+        "mean_closure_days": 3.41,
+        "open_30_plus": 5
+      },
+      {
+        "service_name": "AT - Property Tax Payment Adjustments and Tax Programs",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 1329,
+        "open_at_snapshot": 43,
+        "closure_sample": 1286,
+        "mean_closure_days": 6.22,
+        "open_30_plus": 8
+      },
+      {
+        "service_name": "Business Safety - Business Licence Concern - RMS",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 1317,
+        "open_at_snapshot": 120,
+        "closure_sample": 1197,
+        "mean_closure_days": 14.85,
+        "open_30_plus": 64
+      },
+      {
+        "service_name": "Parks - Roadside Greens - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 1290,
+        "open_at_snapshot": 59,
+        "closure_sample": 1231,
+        "mean_closure_days": 5.33,
+        "open_30_plus": 16
+      },
+      {
+        "service_name": "Roads - Safety and Education",
+        "agency": "OS - Mobility",
+        "requests": 1283,
+        "open_at_snapshot": 457,
+        "closure_sample": 826,
+        "mean_closure_days": 28.23,
+        "open_30_plus": 341
+      },
+      {
+        "service_name": "Recreation - Athletic Park Booking Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 1246,
+        "open_at_snapshot": 57,
+        "closure_sample": 1189,
+        "mean_closure_days": 10.03,
+        "open_30_plus": 46
+      },
+      {
+        "service_name": "AT - TIPP Agreement Request",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 1198,
+        "open_at_snapshot": 23,
+        "closure_sample": 1175,
+        "mean_closure_days": 9.04,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "AT - ONLINE TIPP Information Request",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 1195,
+        "open_at_snapshot": 7,
+        "closure_sample": 1188,
+        "mean_closure_days": 4.41,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Recreation - Playfield Booking Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 1150,
+        "open_at_snapshot": 3,
+        "closure_sample": 1147,
+        "mean_closure_days": 15.05,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "WATS - Construction Inquiry - MAX",
+        "agency": "OS - Water Services",
+        "requests": 1080,
+        "open_at_snapshot": 8,
+        "closure_sample": 1072,
+        "mean_closure_days": 2.63,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "HR - Recruitment and Program Inquiry",
+        "agency": "PICS - Human Resources",
+        "requests": 1079,
+        "open_at_snapshot": 27,
+        "closure_sample": 1052,
+        "mean_closure_days": 1.37,
+        "open_30_plus": 23
+      },
+      {
+        "service_name": "AT - Assessment General Inquiry",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 1069,
+        "open_at_snapshot": 11,
+        "closure_sample": 1058,
+        "mean_closure_days": 4.86,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "CFD - Fire Code and General Inquiries - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 1054,
+        "open_at_snapshot": 23,
+        "closure_sample": 1031,
+        "mean_closure_days": 4.34,
+        "open_30_plus": 14
+      },
+      {
+        "service_name": "After Hours Transit - General Concerns",
+        "agency": "OS - Calgary Transit",
+        "requests": 1042,
+        "open_at_snapshot": 41,
+        "closure_sample": 1001,
+        "mean_closure_days": 3.22,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "Parks - Parks and Open Spaces Bookings",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 1034,
+        "open_at_snapshot": 44,
+        "closure_sample": 990,
+        "mean_closure_days": 38.63,
+        "open_30_plus": 28
+      },
+      {
+        "service_name": "WATS - Water Off-On Appointment",
+        "agency": "OS - Water Services",
+        "requests": 1030,
+        "open_at_snapshot": 21,
+        "closure_sample": 1009,
+        "mean_closure_days": 12.44,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "Parks - Irrigation Maintenance - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 957,
+        "open_at_snapshot": 39,
+        "closure_sample": 918,
+        "mean_closure_days": 3.94,
+        "open_30_plus": 32
+      },
+      {
+        "service_name": "CFD - Provincial Licence Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 945,
+        "open_at_snapshot": 28,
+        "closure_sample": 917,
+        "mean_closure_days": 15.19,
+        "open_30_plus": 12
+      },
+      {
+        "service_name": "CT AC - Trip Feedback - Checker Taxi",
+        "agency": "OSC - Calgary Transit",
+        "requests": 936,
+        "open_at_snapshot": 1,
+        "closure_sample": 935,
+        "mean_closure_days": 1.0,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "RSP - Home Services for Seniors Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 929,
+        "open_at_snapshot": 0,
+        "closure_sample": 929,
+        "mean_closure_days": 3.51,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Finance - Credit and Collection Inquiries",
+        "agency": "CPFS - Finance",
+        "requests": 908,
+        "open_at_snapshot": 2,
+        "closure_sample": 906,
+        "mean_closure_days": 2.29,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WATS - Fire Hydrant",
+        "agency": "OS - Water Services",
+        "requests": 908,
+        "open_at_snapshot": 21,
+        "closure_sample": 887,
+        "mean_closure_days": 8.64,
+        "open_30_plus": 14
+      },
+      {
+        "service_name": "WATS - Water Meter Installation Request",
+        "agency": "OS - Water Services",
+        "requests": 894,
+        "open_at_snapshot": 27,
+        "closure_sample": 867,
+        "mean_closure_days": 13.54,
+        "open_30_plus": 10
+      },
+      {
+        "service_name": "Roads - Street Cleaning Annual Program",
+        "agency": "OS - Mobility",
+        "requests": 879,
+        "open_at_snapshot": 127,
+        "closure_sample": 752,
+        "mean_closure_days": 13.36,
+        "open_30_plus": 127
+      },
+      {
+        "service_name": "ACPL - Animal Licence - Inquiries",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 863,
+        "open_at_snapshot": 3,
+        "closure_sample": 860,
+        "mean_closure_days": 0.55,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Roads - Permits - Requests and Inquiries",
+        "agency": "OS - Mobility",
+        "requests": 853,
+        "open_at_snapshot": 13,
+        "closure_sample": 840,
+        "mean_closure_days": 3.12,
+        "open_30_plus": 13
+      },
+      {
+        "service_name": "Roads - Fence - Noise Barrier - Retaining Wall Repair",
+        "agency": "OS - Mobility",
+        "requests": 851,
+        "open_at_snapshot": 179,
+        "closure_sample": 672,
+        "mean_closure_days": 18.94,
+        "open_30_plus": 155
+      },
+      {
+        "service_name": "DBBS Concern - Building Without a Permit",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 824,
+        "open_at_snapshot": 9,
+        "closure_sample": 815,
+        "mean_closure_days": 4.86,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "ACPL - Lost and Found Animal",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 809,
+        "open_at_snapshot": 11,
+        "closure_sample": 798,
+        "mean_closure_days": 1.11,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "WATS - Water Outage",
+        "agency": "OS - Water Services",
+        "requests": 800,
+        "open_at_snapshot": 14,
+        "closure_sample": 786,
+        "mean_closure_days": 0.9,
+        "open_30_plus": 9
+      },
+      {
+        "service_name": "CT AC - Trip Feedback - CTA",
+        "agency": "OS - Calgary Transit",
+        "requests": 796,
+        "open_at_snapshot": 43,
+        "closure_sample": 753,
+        "mean_closure_days": 9.54,
+        "open_30_plus": 10
+      },
+      {
+        "service_name": "CT - CTrain Stations",
+        "agency": "OS - Calgary Transit",
+        "requests": 792,
+        "open_at_snapshot": 111,
+        "closure_sample": 681,
+        "mean_closure_days": 21.83,
+        "open_30_plus": 61
+      },
+      {
+        "service_name": "WATS - Spills Entering Storm System",
+        "agency": "OS - Water Services",
+        "requests": 789,
+        "open_at_snapshot": 6,
+        "closure_sample": 783,
+        "mean_closure_days": 2.1,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "DBBS - Code Inquiry",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 788,
+        "open_at_snapshot": 1,
+        "closure_sample": 787,
+        "mean_closure_days": 1.37,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - NEW Signal, Left Turn or Pedestrian Light Request",
+        "agency": "OS - Mobility",
+        "requests": 780,
+        "open_at_snapshot": 613,
+        "closure_sample": 167,
+        "mean_closure_days": 47.1,
+        "open_30_plus": 613
+      },
+      {
+        "service_name": "DBBS - Building Construction Concerns and Inquiries",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 759,
+        "open_at_snapshot": 2,
+        "closure_sample": 757,
+        "mean_closure_days": 2.24,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "WATS - Emergency Water Temporary Off",
+        "agency": "OS - Water Services",
+        "requests": 757,
+        "open_at_snapshot": 3,
+        "closure_sample": 754,
+        "mean_closure_days": 0.23,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "DBBS - Planning and Development - After Hours SR",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 739,
+        "open_at_snapshot": 5,
+        "closure_sample": 734,
+        "mean_closure_days": 7.78,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Weed Control Issues - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 726,
+        "open_at_snapshot": 4,
+        "closure_sample": 722,
+        "mean_closure_days": 4.65,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "WATS - Erosion and Sediment Control",
+        "agency": "OS - Water Services",
+        "requests": 725,
+        "open_at_snapshot": 239,
+        "closure_sample": 486,
+        "mean_closure_days": 59.48,
+        "open_30_plus": 203
+      },
+      {
+        "service_name": "CFD - Lockbox Inquiry - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 722,
+        "open_at_snapshot": 28,
+        "closure_sample": 694,
+        "mean_closure_days": 12.45,
+        "open_30_plus": 8
+      },
+      {
+        "service_name": "WATS - Manhole Concerns",
+        "agency": "OS - Water Services",
+        "requests": 720,
+        "open_at_snapshot": 26,
+        "closure_sample": 694,
+        "mean_closure_days": 10.8,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Fire Station Tour",
+        "agency": "CS - Calgary Fire",
+        "requests": 714,
+        "open_at_snapshot": 7,
+        "closure_sample": 707,
+        "mean_closure_days": 3.64,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WATS - Water Pressure Issues",
+        "agency": "OS - Water Services",
+        "requests": 687,
+        "open_at_snapshot": 27,
+        "closure_sample": 660,
+        "mean_closure_days": 7.32,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "Bylaw - Permit - Noise Exemption",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 682,
+        "open_at_snapshot": 5,
+        "closure_sample": 677,
+        "mean_closure_days": 8.67,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WATS - Cross Connection Tester Support - ONLINE",
+        "agency": "OS - Water Services",
+        "requests": 673,
+        "open_at_snapshot": 5,
+        "closure_sample": 668,
+        "mean_closure_days": 8.49,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Water Quality",
+        "agency": "OS - Water Services",
+        "requests": 658,
+        "open_at_snapshot": 0,
+        "closure_sample": 658,
+        "mean_closure_days": 4.81,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "UEP - Odour Inquiries",
+        "agency": "OS - Water Services",
+        "requests": 651,
+        "open_at_snapshot": 7,
+        "closure_sample": 644,
+        "mean_closure_days": 4.63,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "WATS - Cross Connection Inquiries",
+        "agency": "OS - Water Services",
+        "requests": 630,
+        "open_at_snapshot": 5,
+        "closure_sample": 625,
+        "mean_closure_days": 9.24,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Streetlight Damage",
+        "agency": "OS - Mobility",
+        "requests": 614,
+        "open_at_snapshot": 0,
+        "closure_sample": 614,
+        "mean_closure_days": 0.72,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Law - Risk Management and Claims",
+        "agency": "LLSS - Law",
+        "requests": 607,
+        "open_at_snapshot": 0,
+        "closure_sample": 607,
+        "mean_closure_days": 2.04,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Recreation - Pool Booking Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 591,
+        "open_at_snapshot": 43,
+        "closure_sample": 548,
+        "mean_closure_days": 18.2,
+        "open_30_plus": 17
+      },
+      {
+        "service_name": "Parks - PlayBins",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 582,
+        "open_at_snapshot": 12,
+        "closure_sample": 570,
+        "mean_closure_days": 2.88,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Employee - Complaint Compliment",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 581,
+        "open_at_snapshot": 0,
+        "closure_sample": 581,
+        "mean_closure_days": 1.55,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Urgent Water Reconnect",
+        "agency": "OS - Water Services",
+        "requests": 552,
+        "open_at_snapshot": 13,
+        "closure_sample": 539,
+        "mean_closure_days": 4.41,
+        "open_30_plus": 6
+      },
+      {
+        "service_name": "DBBS - SDI - New Subdivision Parks Inspection",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 544,
+        "open_at_snapshot": 67,
+        "closure_sample": 477,
+        "mean_closure_days": 12.97,
+        "open_30_plus": 27
+      },
+      {
+        "service_name": "Parks - Pest Concerns - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 534,
+        "open_at_snapshot": 6,
+        "closure_sample": 528,
+        "mean_closure_days": 6.46,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Parks - Natural Area Inquiries - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 517,
+        "open_at_snapshot": 36,
+        "closure_sample": 481,
+        "mean_closure_days": 13.6,
+        "open_30_plus": 8
+      },
+      {
+        "service_name": "CFD - Fire Code Hazard Complaint - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 502,
+        "open_at_snapshot": 13,
+        "closure_sample": 489,
+        "mean_closure_days": 6.01,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "Parks - Development - Tree Concern - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 496,
+        "open_at_snapshot": 34,
+        "closure_sample": 462,
+        "mean_closure_days": 14.16,
+        "open_30_plus": 15
+      },
+      {
+        "service_name": "Bylaw - Water Misuse / Wasting Concern",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 487,
+        "open_at_snapshot": 33,
+        "closure_sample": 454,
+        "mean_closure_days": 8.0,
+        "open_30_plus": 27
+      },
+      {
+        "service_name": "UD - Major Projects Inquiry",
+        "agency": "IS - Utilities Delivery",
+        "requests": 477,
+        "open_at_snapshot": 13,
+        "closure_sample": 464,
+        "mean_closure_days": 5.64,
+        "open_30_plus": 5
+      },
+      {
+        "service_name": "AT - Tax Account Maintenance",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 456,
+        "open_at_snapshot": 9,
+        "closure_sample": 447,
+        "mean_closure_days": 5.9,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "DBBS - Safety Response",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 455,
+        "open_at_snapshot": 0,
+        "closure_sample": 455,
+        "mean_closure_days": 3.7,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Traffic Operational Improvement Suggestions",
+        "agency": "OS - Mobility",
+        "requests": 453,
+        "open_at_snapshot": 7,
+        "closure_sample": 446,
+        "mean_closure_days": 3.98,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "CT - Advertising and Communications",
+        "agency": "OS - Calgary Transit",
+        "requests": 449,
+        "open_at_snapshot": 136,
+        "closure_sample": 313,
+        "mean_closure_days": 19.97,
+        "open_30_plus": 104
+      },
+      {
+        "service_name": "CT - Transit Safety / Public Etiquette",
+        "agency": "OS - Calgary Transit",
+        "requests": 446,
+        "open_at_snapshot": 98,
+        "closure_sample": 348,
+        "mean_closure_days": 11.56,
+        "open_30_plus": 49
+      },
+      {
+        "service_name": "Stewardship of City Owned Land",
+        "agency": "IS - Real Estate and Development Services",
+        "requests": 441,
+        "open_at_snapshot": 20,
+        "closure_sample": 421,
+        "mean_closure_days": 6.72,
+        "open_30_plus": 11
+      },
+      {
+        "service_name": "AS - Dog Defecation",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 427,
+        "open_at_snapshot": 2,
+        "closure_sample": 425,
+        "mean_closure_days": 4.59,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AT - ONLINE Property Tax Document Request",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 426,
+        "open_at_snapshot": 0,
+        "closure_sample": 426,
+        "mean_closure_days": 1.9,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CT AC - Trip Feedback - Care Calgary",
+        "agency": "OSC - Calgary Transit",
+        "requests": 419,
+        "open_at_snapshot": 1,
+        "closure_sample": 418,
+        "mean_closure_days": 1.84,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Streetlight - General Inquiry",
+        "agency": "OS - Mobility",
+        "requests": 415,
+        "open_at_snapshot": 44,
+        "closure_sample": 371,
+        "mean_closure_days": 27.78,
+        "open_30_plus": 15
+      },
+      {
+        "service_name": "Roads - New Signal, Left Turn or Pedestrian Light Request",
+        "agency": "OS - Mobility",
+        "requests": 409,
+        "open_at_snapshot": 342,
+        "closure_sample": 67,
+        "mean_closure_days": 75.91,
+        "open_30_plus": 188
+      },
+      {
+        "service_name": "CFD - Incident Report Request",
+        "agency": "CS - Calgary Fire",
+        "requests": 407,
+        "open_at_snapshot": 319,
+        "closure_sample": 88,
+        "mean_closure_days": 112.99,
+        "open_30_plus": 287
+      },
+      {
+        "service_name": "VFH - Taxi/Limousine/TNC (Ride Sharing) Concern - RMS",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 405,
+        "open_at_snapshot": 6,
+        "closure_sample": 399,
+        "mean_closure_days": 5.83,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Property Rehab",
+        "agency": "OS - Water Services",
+        "requests": 399,
+        "open_at_snapshot": 84,
+        "closure_sample": 315,
+        "mean_closure_days": 24.01,
+        "open_30_plus": 60
+      },
+      {
+        "service_name": "Roads - Street Paving Program",
+        "agency": "OS - Mobility",
+        "requests": 396,
+        "open_at_snapshot": 198,
+        "closure_sample": 198,
+        "mean_closure_days": 9.62,
+        "open_30_plus": 182
+      },
+      {
+        "service_name": "WATS - Hydrant Connection Unit - HCU Inspections",
+        "agency": "OS - Water Services",
+        "requests": 395,
+        "open_at_snapshot": 3,
+        "closure_sample": 392,
+        "mean_closure_days": 2.13,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Recreation - Boat Stall Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 388,
+        "open_at_snapshot": 3,
+        "closure_sample": 385,
+        "mean_closure_days": 3.46,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "CFD - Special Events Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 384,
+        "open_at_snapshot": 14,
+        "closure_sample": 370,
+        "mean_closure_days": 14.8,
+        "open_30_plus": 6
+      },
+      {
+        "service_name": "AT - BIA Tax Account Inquiry",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 379,
+        "open_at_snapshot": 2,
+        "closure_sample": 377,
+        "mean_closure_days": 3.34,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Life Safety Systems Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 376,
+        "open_at_snapshot": 105,
+        "closure_sample": 271,
+        "mean_closure_days": 37.78,
+        "open_30_plus": 79
+      },
+      {
+        "service_name": "CT AC - Trip Feedback - Southland",
+        "agency": "OSC - Calgary Transit",
+        "requests": 376,
+        "open_at_snapshot": 0,
+        "closure_sample": 376,
+        "mean_closure_days": 1.78,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Animal Bite",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 368,
+        "open_at_snapshot": 4,
+        "closure_sample": 364,
+        "mean_closure_days": 1.88,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "Parks - General Concerns",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 360,
+        "open_at_snapshot": 15,
+        "closure_sample": 345,
+        "mean_closure_days": 10.32,
+        "open_30_plus": 8
+      },
+      {
+        "service_name": "CFD - Land Search - Property Search",
+        "agency": "CS - Calgary Fire",
+        "requests": 358,
+        "open_at_snapshot": 165,
+        "closure_sample": 193,
+        "mean_closure_days": 43.01,
+        "open_30_plus": 133
+      },
+      {
+        "service_name": "RSP - Volunteer Request",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 357,
+        "open_at_snapshot": 0,
+        "closure_sample": 357,
+        "mean_closure_days": 8.48,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Law - Insurance and Claims",
+        "agency": "LLSS - Law",
+        "requests": 355,
+        "open_at_snapshot": 2,
+        "closure_sample": 353,
+        "mean_closure_days": 4.17,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WATS - Drainage Bylaw",
+        "agency": "OS - Water Services",
+        "requests": 349,
+        "open_at_snapshot": 206,
+        "closure_sample": 143,
+        "mean_closure_days": 62.97,
+        "open_30_plus": 180
+      },
+      {
+        "service_name": "WRS - Landfill - Disposal Information",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 337,
+        "open_at_snapshot": 1,
+        "closure_sample": 336,
+        "mean_closure_days": 2.04,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Registered Social Worker Letter",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 335,
+        "open_at_snapshot": 1,
+        "closure_sample": 334,
+        "mean_closure_days": 2.31,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Local Improvement Inquiry",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 330,
+        "open_at_snapshot": 5,
+        "closure_sample": 325,
+        "mean_closure_days": 9.4,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Facility Mgmt - FMCCC - Customer Care Centre",
+        "agency": "OS - Facility Management",
+        "requests": 328,
+        "open_at_snapshot": 5,
+        "closure_sample": 323,
+        "mean_closure_days": 7.64,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "CT - CTrain Schedule",
+        "agency": "OS - Calgary Transit",
+        "requests": 322,
+        "open_at_snapshot": 12,
+        "closure_sample": 310,
+        "mean_closure_days": 10.77,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "Roads - Pavement Markings - Missing or Faded",
+        "agency": "OS - Mobility",
+        "requests": 313,
+        "open_at_snapshot": 27,
+        "closure_sample": 286,
+        "mean_closure_days": 70.67,
+        "open_30_plus": 13
+      },
+      {
+        "service_name": "AS - Animal Chase - Threat",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 312,
+        "open_at_snapshot": 3,
+        "closure_sample": 309,
+        "mean_closure_days": 1.58,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Recreation - Tennis / Pickleball Court Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 311,
+        "open_at_snapshot": 4,
+        "closure_sample": 307,
+        "mean_closure_days": 11.99,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "CFD - Fire Safety Plan Review - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 302,
+        "open_at_snapshot": 31,
+        "closure_sample": 271,
+        "mean_closure_days": 18.0,
+        "open_30_plus": 6
+      },
+      {
+        "service_name": "AS - Animal Damaging Pet or Property",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 299,
+        "open_at_snapshot": 7,
+        "closure_sample": 292,
+        "mean_closure_days": 2.9,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "CT - Bus or CTrain Vehicle Maintenance",
+        "agency": "OS - Calgary Transit",
+        "requests": 289,
+        "open_at_snapshot": 12,
+        "closure_sample": 277,
+        "mean_closure_days": 10.5,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "WATS - Fire Hydrant Flow Test",
+        "agency": "OS - Water Services",
+        "requests": 286,
+        "open_at_snapshot": 2,
+        "closure_sample": 284,
+        "mean_closure_days": 9.54,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "Bylaw - Spills Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 279,
+        "open_at_snapshot": 51,
+        "closure_sample": 228,
+        "mean_closure_days": 36.18,
+        "open_30_plus": 25
+      },
+      {
+        "service_name": "Parks - Planning Inquiries",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 278,
+        "open_at_snapshot": 14,
+        "closure_sample": 264,
+        "mean_closure_days": 6.9,
+        "open_30_plus": 8
+      },
+      {
+        "service_name": "CPBS - Bridge - Tunnel - Underpass Concern",
+        "agency": "IS - Capital Planning and Business Services",
+        "requests": 273,
+        "open_at_snapshot": 8,
+        "closure_sample": 265,
+        "mean_closure_days": 2.74,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "AT - Property Details",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 267,
+        "open_at_snapshot": 0,
+        "closure_sample": 267,
+        "mean_closure_days": 4.95,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Driveway Crossings - Curb Lowering",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 263,
+        "open_at_snapshot": 8,
+        "closure_sample": 255,
+        "mean_closure_days": 12.42,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "WRS - Brochures",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 254,
+        "open_at_snapshot": 4,
+        "closure_sample": 250,
+        "mean_closure_days": 4.93,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Repaving Candidate Street and Inquiries",
+        "agency": "OS - Mobility",
+        "requests": 252,
+        "open_at_snapshot": 20,
+        "closure_sample": 232,
+        "mean_closure_days": 16.05,
+        "open_30_plus": 17
+      },
+      {
+        "service_name": "CFD - Fire Truck Booking",
+        "agency": "CS - Calgary Fire",
+        "requests": 248,
+        "open_at_snapshot": 3,
+        "closure_sample": 245,
+        "mean_closure_days": 9.04,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Water Equipment Pickup - MAX",
+        "agency": "OS - Water Services",
+        "requests": 241,
+        "open_at_snapshot": 2,
+        "closure_sample": 239,
+        "mean_closure_days": 3.15,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WATS - Water Wagon Issues",
+        "agency": "OS - Water Services",
+        "requests": 234,
+        "open_at_snapshot": 0,
+        "closure_sample": 234,
+        "mean_closure_days": 1.25,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Mobile Food Concession Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 233,
+        "open_at_snapshot": 5,
+        "closure_sample": 228,
+        "mean_closure_days": 20.15,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "Finance - ONLINE eBill Inquiry",
+        "agency": "CPFS - Finance",
+        "requests": 230,
+        "open_at_snapshot": 0,
+        "closure_sample": 230,
+        "mean_closure_days": 1.11,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Recreation - Arena Meeting Room Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 230,
+        "open_at_snapshot": 5,
+        "closure_sample": 225,
+        "mean_closure_days": 2.93,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "DBBS - Unsafe Derelict or Unsecure Property",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 226,
+        "open_at_snapshot": 0,
+        "closure_sample": 226,
+        "mean_closure_days": 1.59,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Golf Course Inquiry",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 221,
+        "open_at_snapshot": 1,
+        "closure_sample": 220,
+        "mean_closure_days": 2.4,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Bylaw - Vandalism and Property Damage Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 220,
+        "open_at_snapshot": 20,
+        "closure_sample": 200,
+        "mean_closure_days": 7.54,
+        "open_30_plus": 13
+      },
+      {
+        "service_name": "Parks - Lighting Concern - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 210,
+        "open_at_snapshot": 4,
+        "closure_sample": 206,
+        "mean_closure_days": 3.86,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "DBBS Concern - Electrical",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 200,
+        "open_at_snapshot": 8,
+        "closure_sample": 192,
+        "mean_closure_days": 4.97,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "MC - calgary.ca Feedback",
+        "agency": "PICS - Marketing and Communication",
+        "requests": 200,
+        "open_at_snapshot": 7,
+        "closure_sample": 193,
+        "mean_closure_days": 8.49,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Parks - Lost and Found - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 199,
+        "open_at_snapshot": 6,
+        "closure_sample": 193,
+        "mean_closure_days": 6.06,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "CT - Park and Ride Lot - LRT or Bus",
+        "agency": "OS - Calgary Transit",
+        "requests": 197,
+        "open_at_snapshot": 24,
+        "closure_sample": 173,
+        "mean_closure_days": 24.06,
+        "open_30_plus": 12
+      },
+      {
+        "service_name": "WATS - Water Service Fee Invoice",
+        "agency": "OS - Water Services",
+        "requests": 197,
+        "open_at_snapshot": 0,
+        "closure_sample": 197,
+        "mean_closure_days": 2.19,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Drainage Concerns",
+        "agency": "OS - Water Services",
+        "requests": 195,
+        "open_at_snapshot": 68,
+        "closure_sample": 127,
+        "mean_closure_days": 65.2,
+        "open_30_plus": 57
+      },
+      {
+        "service_name": "Finance - Corporate Billing and eBill Inquiry",
+        "agency": "CPFS - Finance",
+        "requests": 194,
+        "open_at_snapshot": 0,
+        "closure_sample": 194,
+        "mean_closure_days": 1.05,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Athletic Park Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 192,
+        "open_at_snapshot": 7,
+        "closure_sample": 185,
+        "mean_closure_days": 14.59,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WATS - Bulk Water Accounts and Air Gap Vehicle Inspection",
+        "agency": "OS - Water Services",
+        "requests": 191,
+        "open_at_snapshot": 3,
+        "closure_sample": 188,
+        "mean_closure_days": 10.1,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Tap Water Sampling Program",
+        "agency": "OS - Water Services",
+        "requests": 189,
+        "open_at_snapshot": 81,
+        "closure_sample": 108,
+        "mean_closure_days": 44.45,
+        "open_30_plus": 64
+      },
+      {
+        "service_name": "WATS - Storm Pond Concerns",
+        "agency": "OS - Water Services",
+        "requests": 188,
+        "open_at_snapshot": 7,
+        "closure_sample": 181,
+        "mean_closure_days": 5.66,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "Public - Municipal Complex - Atrium or Plaza Use Request",
+        "agency": "OS - Facility Management",
+        "requests": 187,
+        "open_at_snapshot": 81,
+        "closure_sample": 106,
+        "mean_closure_days": 49.65,
+        "open_30_plus": 67
+      },
+      {
+        "service_name": "RSP - Arena Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 186,
+        "open_at_snapshot": 5,
+        "closure_sample": 181,
+        "mean_closure_days": 14.68,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "AT - Assessment Property Details",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 183,
+        "open_at_snapshot": 5,
+        "closure_sample": 178,
+        "mean_closure_days": 7.59,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "PSD - Transportation Special Projects",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 182,
+        "open_at_snapshot": 3,
+        "closure_sample": 179,
+        "mean_closure_days": 9.22,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "ACPL - No Cost Spay or Neuter Program Inquiries",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 178,
+        "open_at_snapshot": 4,
+        "closure_sample": 174,
+        "mean_closure_days": 1.17,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "CT - Snow and Ice Control",
+        "agency": "OS - Calgary Transit",
+        "requests": 174,
+        "open_at_snapshot": 0,
+        "closure_sample": 174,
+        "mean_closure_days": 6.21,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Smoke Alarm Inquiries - Asst. for Seniors/Disabled",
+        "agency": "CS - Calgary Fire",
+        "requests": 173,
+        "open_at_snapshot": 4,
+        "closure_sample": 169,
+        "mean_closure_days": 2.96,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "DBBS - Urgent Safety Response",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 170,
+        "open_at_snapshot": 0,
+        "closure_sample": 170,
+        "mean_closure_days": 1.69,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - E-Scooter",
+        "agency": "OS - Mobility",
+        "requests": 164,
+        "open_at_snapshot": 39,
+        "closure_sample": 125,
+        "mean_closure_days": 1.13,
+        "open_30_plus": 39
+      },
+      {
+        "service_name": "ERR - Watering Schedule",
+        "agency": "PDS - Environmental Risk & Resilience",
+        "requests": 154,
+        "open_at_snapshot": 4,
+        "closure_sample": 150,
+        "mean_closure_days": 21.07,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "PD - Noise Barrier Wall",
+        "agency": "IS - Project Development",
+        "requests": 154,
+        "open_at_snapshot": 9,
+        "closure_sample": 145,
+        "mean_closure_days": 8.96,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Traffic Signal Lane Designation Sign",
+        "agency": "OS - Mobility",
+        "requests": 154,
+        "open_at_snapshot": 93,
+        "closure_sample": 61,
+        "mean_closure_days": 7.85,
+        "open_30_plus": 83
+      },
+      {
+        "service_name": "WRS - Landfill - Industrial Permit or Inquiry",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 154,
+        "open_at_snapshot": 0,
+        "closure_sample": 154,
+        "mean_closure_days": 1.01,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - School Program Registration",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 152,
+        "open_at_snapshot": 1,
+        "closure_sample": 151,
+        "mean_closure_days": 2.14,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "PSD - Annual Paving Program - Major Roads",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 149,
+        "open_at_snapshot": 3,
+        "closure_sample": 146,
+        "mean_closure_days": 2.79,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Basement Seepage",
+        "agency": "OS - Water Services",
+        "requests": 148,
+        "open_at_snapshot": 0,
+        "closure_sample": 148,
+        "mean_closure_days": 1.17,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "BIA Requests",
+        "agency": "CS - Partnerships",
+        "requests": 144,
+        "open_at_snapshot": 0,
+        "closure_sample": 144,
+        "mean_closure_days": 0.49,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - NAM - Inactive Camp Clean Up - GIS INTERNAL",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 144,
+        "open_at_snapshot": 13,
+        "closure_sample": 131,
+        "mean_closure_days": 4.56,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Playfield Usage Concerns",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 141,
+        "open_at_snapshot": 6,
+        "closure_sample": 135,
+        "mean_closure_days": 10.13,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "CFD - Request to attend a Fire Drill - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 140,
+        "open_at_snapshot": 43,
+        "closure_sample": 97,
+        "mean_closure_days": 56.34,
+        "open_30_plus": 28
+      },
+      {
+        "service_name": "Recreation - LC - Gym/Room/Courts Booking Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 139,
+        "open_at_snapshot": 4,
+        "closure_sample": 135,
+        "mean_closure_days": 4.01,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WATS - Flat to Meter Appointment",
+        "agency": "OS - Water Services",
+        "requests": 137,
+        "open_at_snapshot": 42,
+        "closure_sample": 95,
+        "mean_closure_days": 32.74,
+        "open_30_plus": 18
+      },
+      {
+        "service_name": "CPBS - Addressing Inquiry",
+        "agency": "IS - Capital Planning and Business Services",
+        "requests": 135,
+        "open_at_snapshot": 5,
+        "closure_sample": 130,
+        "mean_closure_days": 5.64,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Water Billing Concerns",
+        "agency": "OS - Water Services",
+        "requests": 131,
+        "open_at_snapshot": 1,
+        "closure_sample": 130,
+        "mean_closure_days": 4.22,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Landfill - Accounts and Billing",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 128,
+        "open_at_snapshot": 0,
+        "closure_sample": 128,
+        "mean_closure_days": 2.37,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Partnerships - Community Association Inquiries",
+        "agency": "CS - Partnerships",
+        "requests": 127,
+        "open_at_snapshot": 1,
+        "closure_sample": 126,
+        "mean_closure_days": 4.95,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Fireworks Pyro Open Flame Blasting Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 126,
+        "open_at_snapshot": 3,
+        "closure_sample": 123,
+        "mean_closure_days": 16.34,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Backlane Paving Construction",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 125,
+        "open_at_snapshot": 1,
+        "closure_sample": 124,
+        "mean_closure_days": 3.44,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Parks - Pest Management",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 124,
+        "open_at_snapshot": 0,
+        "closure_sample": 124,
+        "mean_closure_days": 4.6,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Recreation - School Connections Booking Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 124,
+        "open_at_snapshot": 17,
+        "closure_sample": 107,
+        "mean_closure_days": 51.05,
+        "open_30_plus": 7
+      },
+      {
+        "service_name": "AS - Animal Public Relations",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 121,
+        "open_at_snapshot": 0,
+        "closure_sample": 121,
+        "mean_closure_days": 4.55,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "IT - City Online - Concern",
+        "agency": "PICS - Information Technology",
+        "requests": 121,
+        "open_at_snapshot": 0,
+        "closure_sample": 121,
+        "mean_closure_days": 1.08,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Community Inquiry",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 120,
+        "open_at_snapshot": 8,
+        "closure_sample": 112,
+        "mean_closure_days": 13.85,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "CP - Indemnification Agreements",
+        "agency": "PDS - Community Planning",
+        "requests": 118,
+        "open_at_snapshot": 12,
+        "closure_sample": 106,
+        "mean_closure_days": 14.83,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Landfill - Operations",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 117,
+        "open_at_snapshot": 1,
+        "closure_sample": 116,
+        "mean_closure_days": 3.09,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Urban Livestock Licenses and Permits",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 116,
+        "open_at_snapshot": 7,
+        "closure_sample": 109,
+        "mean_closure_days": 19.94,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "Parks - Tree Education Programs",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 116,
+        "open_at_snapshot": 0,
+        "closure_sample": 116,
+        "mean_closure_days": 11.31,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Bulk Water Station Inquiries",
+        "agency": "OS - Water Services",
+        "requests": 116,
+        "open_at_snapshot": 0,
+        "closure_sample": 116,
+        "mean_closure_days": 4.67,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Collection Schedule Inquiry",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 116,
+        "open_at_snapshot": 1,
+        "closure_sample": 115,
+        "mean_closure_days": 3.79,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Invoice Inquiry",
+        "agency": "CS - Calgary Fire",
+        "requests": 113,
+        "open_at_snapshot": 11,
+        "closure_sample": 102,
+        "mean_closure_days": 12.41,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "AT - (PTAP) Property Tax Assistance Program Inquiry",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 111,
+        "open_at_snapshot": 0,
+        "closure_sample": 111,
+        "mean_closure_days": 3.46,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Temporary Water Line Issues",
+        "agency": "OS - Water Services",
+        "requests": 111,
+        "open_at_snapshot": 0,
+        "closure_sample": 111,
+        "mean_closure_days": 1.36,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CT AC - Activity Report - Checker INTERNAL",
+        "agency": "OSC - Calgary Transit",
+        "requests": 110,
+        "open_at_snapshot": 0,
+        "closure_sample": 110,
+        "mean_closure_days": 2.86,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Partnerships - Festival, Events and Cultural Development",
+        "agency": "CS - Partnerships",
+        "requests": 110,
+        "open_at_snapshot": 3,
+        "closure_sample": 107,
+        "mean_closure_days": 5.58,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Roads - BIA Maintenance",
+        "agency": "OS - Mobility",
+        "requests": 109,
+        "open_at_snapshot": 11,
+        "closure_sample": 98,
+        "mean_closure_days": 2.55,
+        "open_30_plus": 11
+      },
+      {
+        "service_name": "DBBS - SDI - New Subdivision Surface Inspection",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 107,
+        "open_at_snapshot": 1,
+        "closure_sample": 106,
+        "mean_closure_days": 15.39,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - School Landfill Tours Lottery",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 107,
+        "open_at_snapshot": 0,
+        "closure_sample": 107,
+        "mean_closure_days": 1.13,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AT - BTIPP Agreement Request",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 105,
+        "open_at_snapshot": 0,
+        "closure_sample": 105,
+        "mean_closure_days": 4.84,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Major Road Projects Inquiry",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 104,
+        "open_at_snapshot": 4,
+        "closure_sample": 100,
+        "mean_closure_days": 1.84,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Occupant Load Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 102,
+        "open_at_snapshot": 8,
+        "closure_sample": 94,
+        "mean_closure_days": 10.26,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "CFD - Safe Housing - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 100,
+        "open_at_snapshot": 1,
+        "closure_sample": 99,
+        "mean_closure_days": 10.21,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CRP - Historical Hydrant Data or Flow Test",
+        "agency": "PDS - City and Regional Planning",
+        "requests": 96,
+        "open_at_snapshot": 18,
+        "closure_sample": 78,
+        "mean_closure_days": 13.92,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WRS - Bin Checks",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 96,
+        "open_at_snapshot": 0,
+        "closure_sample": 96,
+        "mean_closure_days": 1.49,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Traffic Signal Construction Inquiry",
+        "agency": "OS - Mobility",
+        "requests": 95,
+        "open_at_snapshot": 20,
+        "closure_sample": 75,
+        "mean_closure_days": 5.61,
+        "open_30_plus": 17
+      },
+      {
+        "service_name": "CT AC - Activity Report - Care Calgary INTERNAL",
+        "agency": "OSC - Calgary Transit",
+        "requests": 93,
+        "open_at_snapshot": 1,
+        "closure_sample": 92,
+        "mean_closure_days": 5.07,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "DBBS Concern - Heating and Ventilation",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 93,
+        "open_at_snapshot": 3,
+        "closure_sample": 90,
+        "mean_closure_days": 5.64,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "Parks - Volunteer Request",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 92,
+        "open_at_snapshot": 3,
+        "closure_sample": 89,
+        "mean_closure_days": 2.8,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "PSD - Parks and Open Spaces",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 91,
+        "open_at_snapshot": 1,
+        "closure_sample": 90,
+        "mean_closure_days": 3.63,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Irrigation Line Location Request - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 91,
+        "open_at_snapshot": 2,
+        "closure_sample": 89,
+        "mean_closure_days": 7.24,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "CSC - Calgary.ca Feedback and Issue Report",
+        "agency": "PICS - Customer Service and Communications",
+        "requests": 90,
+        "open_at_snapshot": 0,
+        "closure_sample": 90,
+        "mean_closure_days": 5.54,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AT - School Support Notice Document Request",
+        "agency": "CPFS - Assessment and Tax",
+        "requests": 87,
+        "open_at_snapshot": 0,
+        "closure_sample": 87,
+        "mean_closure_days": 6.25,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Bylaw - Water Services Request",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 87,
+        "open_at_snapshot": 19,
+        "closure_sample": 68,
+        "mean_closure_days": 31.74,
+        "open_30_plus": 13
+      },
+      {
+        "service_name": "Mayors Office - General Concerns",
+        "agency": "Elected Officials",
+        "requests": 86,
+        "open_at_snapshot": 0,
+        "closure_sample": 86,
+        "mean_closure_days": 0.01,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Pool - Killarney",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 86,
+        "open_at_snapshot": 0,
+        "closure_sample": 86,
+        "mean_closure_days": 8.48,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Disposal Guide Tool Feedback",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 86,
+        "open_at_snapshot": 0,
+        "closure_sample": 86,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Green Line - Spill and Substance Release Report (X217)",
+        "agency": "OSC - Greenline",
+        "requests": 85,
+        "open_at_snapshot": 2,
+        "closure_sample": 83,
+        "mean_closure_days": 1.7,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Green Line Inquiry",
+        "agency": "IS - Green Line LRT - SE Project",
+        "requests": 85,
+        "open_at_snapshot": 0,
+        "closure_sample": 85,
+        "mean_closure_days": 6.99,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Finance - Accounts Payable",
+        "agency": "CPFS - Finance",
+        "requests": 84,
+        "open_at_snapshot": 0,
+        "closure_sample": 84,
+        "mean_closure_days": 2.17,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Southland Leisure Centre Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 84,
+        "open_at_snapshot": 2,
+        "closure_sample": 82,
+        "mean_closure_days": 4.49,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "CFD - Fire Safety Presentation",
+        "agency": "CS - Calgary Fire",
+        "requests": 83,
+        "open_at_snapshot": 0,
+        "closure_sample": 83,
+        "mean_closure_days": 2.53,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "REDS - Property Leasing and Sales Inquiry",
+        "agency": "IS - Real Estate and Development Services",
+        "requests": 83,
+        "open_at_snapshot": 0,
+        "closure_sample": 83,
+        "mean_closure_days": 2.06,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PD - Future Road Planning and Upgrades",
+        "agency": "IS - Project Development",
+        "requests": 77,
+        "open_at_snapshot": 3,
+        "closure_sample": 74,
+        "mean_closure_days": 6.19,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Landfill - Clean Fill",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 77,
+        "open_at_snapshot": 1,
+        "closure_sample": 76,
+        "mean_closure_days": 1.36,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Livestock and Bird(s) in the City",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 76,
+        "open_at_snapshot": 4,
+        "closure_sample": 72,
+        "mean_closure_days": 9.36,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "CT AC - Activity Report - Southland INTERNAL",
+        "agency": "OSC - Calgary Transit",
+        "requests": 76,
+        "open_at_snapshot": 0,
+        "closure_sample": 76,
+        "mean_closure_days": 2.29,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "REDS - Encroachment Agreements on City Land",
+        "agency": "IS - Real Estate and Development Services",
+        "requests": 76,
+        "open_at_snapshot": 0,
+        "closure_sample": 76,
+        "mean_closure_days": 3.71,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Pool - Canyon Meadows",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 75,
+        "open_at_snapshot": 4,
+        "closure_sample": 71,
+        "mean_closure_days": 11.25,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "WATS - Lot Grading",
+        "agency": "OS - Water Services",
+        "requests": 74,
+        "open_at_snapshot": 34,
+        "closure_sample": 40,
+        "mean_closure_days": 54.63,
+        "open_30_plus": 28
+      },
+      {
+        "service_name": "Roads - Sidewalk Installation and Accessibility",
+        "agency": "OS - Mobility",
+        "requests": 70,
+        "open_at_snapshot": 25,
+        "closure_sample": 45,
+        "mean_closure_days": 23.71,
+        "open_30_plus": 15
+      },
+      {
+        "service_name": "Recreation - Arena Tournament and Special Event Applicatio",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 69,
+        "open_at_snapshot": 8,
+        "closure_sample": 61,
+        "mean_closure_days": 35.57,
+        "open_30_plus": 6
+      },
+      {
+        "service_name": "Roads - Traffic Signal Operation Report - Intersection Pla",
+        "agency": "OS - Mobility",
+        "requests": 67,
+        "open_at_snapshot": 12,
+        "closure_sample": 55,
+        "mean_closure_days": 31.44,
+        "open_30_plus": 4
+      },
+      {
+        "service_name": "RSP - Pool - Renfrew",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 66,
+        "open_at_snapshot": 0,
+        "closure_sample": 66,
+        "mean_closure_days": 3.83,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CE - Water Restrictions",
+        "agency": "PDS - Climate and Environment",
+        "requests": 65,
+        "open_at_snapshot": 0,
+        "closure_sample": 65,
+        "mean_closure_days": 4.6,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Feedback - Community Traffic Safety Projects",
+        "agency": "OS - Mobility",
+        "requests": 64,
+        "open_at_snapshot": 0,
+        "closure_sample": 64,
+        "mean_closure_days": 0.19,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Recycling - Depots",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 64,
+        "open_at_snapshot": 0,
+        "closure_sample": 64,
+        "mean_closure_days": 1.08,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Water Treatment Inquiries",
+        "agency": "OS - Water Services",
+        "requests": 62,
+        "open_at_snapshot": 0,
+        "closure_sample": 62,
+        "mean_closure_days": 3.61,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Various Street Improvements - Current Projects",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 61,
+        "open_at_snapshot": 3,
+        "closure_sample": 58,
+        "mean_closure_days": 3.72,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "RSP - Sport Hub Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 61,
+        "open_at_snapshot": 0,
+        "closure_sample": 61,
+        "mean_closure_days": 5.85,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Rat Sighting",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 60,
+        "open_at_snapshot": 1,
+        "closure_sample": 59,
+        "mean_closure_days": 1.05,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Pool - Bob Bahan",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 60,
+        "open_at_snapshot": 8,
+        "closure_sample": 52,
+        "mean_closure_days": 17.52,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "RSP - Pool - Thornhill",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 60,
+        "open_at_snapshot": 0,
+        "closure_sample": 60,
+        "mean_closure_days": 7.82,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Industrial Monitoring Inquiry",
+        "agency": "OS - Water Services",
+        "requests": 60,
+        "open_at_snapshot": 2,
+        "closure_sample": 58,
+        "mean_closure_days": 2.72,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Water Data Request",
+        "agency": "OS - Water Services",
+        "requests": 60,
+        "open_at_snapshot": 1,
+        "closure_sample": 59,
+        "mean_closure_days": 7.51,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Animal Park - Pathway Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 59,
+        "open_at_snapshot": 1,
+        "closure_sample": 58,
+        "mean_closure_days": 1.4,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Roads - Utility Placement Inquiry",
+        "agency": "OS - Mobility",
+        "requests": 59,
+        "open_at_snapshot": 2,
+        "closure_sample": 57,
+        "mean_closure_days": 5.44,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Roads - Wheelchair Slope - Request For",
+        "agency": "OS - Mobility",
+        "requests": 59,
+        "open_at_snapshot": 30,
+        "closure_sample": 29,
+        "mean_closure_days": 18.17,
+        "open_30_plus": 26
+      },
+      {
+        "service_name": "CAI - Addressing Inquiry",
+        "agency": "PICS - Collaboration, Analytics and Innovation",
+        "requests": 58,
+        "open_at_snapshot": 0,
+        "closure_sample": 58,
+        "mean_closure_days": 7.43,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "DBBS - SDI - Utility Inspection",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 58,
+        "open_at_snapshot": 1,
+        "closure_sample": 57,
+        "mean_closure_days": 6.63,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "RSP - Pool - Sir Winston Churchill",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 56,
+        "open_at_snapshot": 0,
+        "closure_sample": 56,
+        "mean_closure_days": 13.32,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CPBS - Plus 15 Skywalk",
+        "agency": "IS - Capital Planning and Business Services",
+        "requests": 55,
+        "open_at_snapshot": 0,
+        "closure_sample": 55,
+        "mean_closure_days": 3.15,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Shared E-Bike",
+        "agency": "OS - Mobility",
+        "requests": 55,
+        "open_at_snapshot": 35,
+        "closure_sample": 20,
+        "mean_closure_days": 6.8,
+        "open_30_plus": 35
+      },
+      {
+        "service_name": "Roads - Shared and Rental E-Scooter Program",
+        "agency": "OS - Mobility",
+        "requests": 54,
+        "open_at_snapshot": 38,
+        "closure_sample": 16,
+        "mean_closure_days": 0.06,
+        "open_30_plus": 36
+      },
+      {
+        "service_name": "AS - Animal Tethered -Tied",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 53,
+        "open_at_snapshot": 1,
+        "closure_sample": 52,
+        "mean_closure_days": 1.48,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "RSP - Calgary AfterSchool Program Inquires",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 53,
+        "open_at_snapshot": 2,
+        "closure_sample": 51,
+        "mean_closure_days": 6.51,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Human Injury",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 52,
+        "open_at_snapshot": 0,
+        "closure_sample": 52,
+        "mean_closure_days": 2.56,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "ACPL - Bite Prevention Program Application",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 51,
+        "open_at_snapshot": 25,
+        "closure_sample": 26,
+        "mean_closure_days": 56.77,
+        "open_30_plus": 20
+      },
+      {
+        "service_name": "ERR - Water Conservation Programs",
+        "agency": "PDS - Environmental Risk & Resilience",
+        "requests": 50,
+        "open_at_snapshot": 0,
+        "closure_sample": 50,
+        "mean_closure_days": 9.96,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Community Safety Inquiries",
+        "agency": "CS - Calgary Fire",
+        "requests": 49,
+        "open_at_snapshot": 3,
+        "closure_sample": 46,
+        "mean_closure_days": 3.57,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "WRS - Multifamily Recycling and Composting",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 49,
+        "open_at_snapshot": 0,
+        "closure_sample": 49,
+        "mean_closure_days": 3.86,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Bylaw - Advocacy Sign Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 48,
+        "open_at_snapshot": 0,
+        "closure_sample": 48,
+        "mean_closure_days": 2.98,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - SCHOOL Fire Drill with Local Fire Station - ONLINE",
+        "agency": "CS - Calgary Fire",
+        "requests": 47,
+        "open_at_snapshot": 0,
+        "closure_sample": 47,
+        "mean_closure_days": 1.94,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CP - Community Planning - General Inquiries",
+        "agency": "PDS - Community Planning",
+        "requests": 47,
+        "open_at_snapshot": 2,
+        "closure_sample": 45,
+        "mean_closure_days": 13.31,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Fleet and Inventory - Inquiry",
+        "agency": "OS - Fleet and Inventory",
+        "requests": 45,
+        "open_at_snapshot": 0,
+        "closure_sample": 45,
+        "mean_closure_days": 4.82,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Developer Request for Parks Irrigation Meter",
+        "agency": "OS - Water Services",
+        "requests": 45,
+        "open_at_snapshot": 25,
+        "closure_sample": 20,
+        "mean_closure_days": 43.15,
+        "open_30_plus": 19
+      },
+      {
+        "service_name": "WATS - Wastewater Treatment Information",
+        "agency": "OS - Water Services",
+        "requests": 45,
+        "open_at_snapshot": 1,
+        "closure_sample": 44,
+        "mean_closure_days": 4.39,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Seasonal Vendor Application",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 44,
+        "open_at_snapshot": 0,
+        "closure_sample": 44,
+        "mean_closure_days": 28.82,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Booking Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 44,
+        "open_at_snapshot": 0,
+        "closure_sample": 44,
+        "mean_closure_days": 4.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Program Registration Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 43,
+        "open_at_snapshot": 2,
+        "closure_sample": 41,
+        "mean_closure_days": 9.32,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "WATS - Location of Underground Water Lines - MAX",
+        "agency": "OS - Water Services",
+        "requests": 41,
+        "open_at_snapshot": 0,
+        "closure_sample": 41,
+        "mean_closure_days": 2.8,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Pool - Inglewood",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 40,
+        "open_at_snapshot": 2,
+        "closure_sample": 38,
+        "mean_closure_days": 4.21,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Mosquito Concerns",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 39,
+        "open_at_snapshot": 1,
+        "closure_sample": 38,
+        "mean_closure_days": 8.87,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Calgary Soccer Centre Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 38,
+        "open_at_snapshot": 0,
+        "closure_sample": 38,
+        "mean_closure_days": 5.95,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Pool - Glenmore",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 38,
+        "open_at_snapshot": 0,
+        "closure_sample": 38,
+        "mean_closure_days": 7.24,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Recreation - Sailing School Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 38,
+        "open_at_snapshot": 3,
+        "closure_sample": 35,
+        "mean_closure_days": 43.8,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "WRS - Education Inquiries",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 38,
+        "open_at_snapshot": 1,
+        "closure_sample": 37,
+        "mean_closure_days": 31.16,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "DBBS Concern - Plumbing and Gas",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 37,
+        "open_at_snapshot": 1,
+        "closure_sample": 36,
+        "mean_closure_days": 4.83,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "MC - Calgary.ca Feedback and Issue Report",
+        "agency": "PICS - Marketing and Communication",
+        "requests": 37,
+        "open_at_snapshot": 0,
+        "closure_sample": 37,
+        "mean_closure_days": 4.62,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Calgary Housing - General Inquiry",
+        "agency": "AO - Calgary Housing",
+        "requests": 36,
+        "open_at_snapshot": 4,
+        "closure_sample": 32,
+        "mean_closure_days": 22.88,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "RSP - Pool - Administration Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 36,
+        "open_at_snapshot": 0,
+        "closure_sample": 36,
+        "mean_closure_days": 5.61,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CAI - City Online - Concern",
+        "agency": "PICS - Collaboration, Analytics and Innovation",
+        "requests": 35,
+        "open_at_snapshot": 0,
+        "closure_sample": 35,
+        "mean_closure_days": 2.29,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CP - Water Development Inquiry",
+        "agency": "PDS - Community Planning",
+        "requests": 35,
+        "open_at_snapshot": 0,
+        "closure_sample": 35,
+        "mean_closure_days": 27.94,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Bridges and Structures Inquiry",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 35,
+        "open_at_snapshot": 1,
+        "closure_sample": 34,
+        "mean_closure_days": 3.47,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Village Square Leisure Centre Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 35,
+        "open_at_snapshot": 1,
+        "closure_sample": 34,
+        "mean_closure_days": 13.38,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Animal Injured",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 34,
+        "open_at_snapshot": 0,
+        "closure_sample": 34,
+        "mean_closure_days": 0.56,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Glenmore Reservoir - Boat Rentals",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 34,
+        "open_at_snapshot": 0,
+        "closure_sample": 34,
+        "mean_closure_days": 6.79,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Special Collection",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 34,
+        "open_at_snapshot": 0,
+        "closure_sample": 34,
+        "mean_closure_days": 5.29,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CPBS - Wooden Stairs - Repairs",
+        "agency": "IS - Capital Planning and Business Services",
+        "requests": 33,
+        "open_at_snapshot": 0,
+        "closure_sample": 33,
+        "mean_closure_days": 3.61,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Supply - General Inquiries",
+        "agency": "CPFS - Supply Management",
+        "requests": 33,
+        "open_at_snapshot": 0,
+        "closure_sample": 33,
+        "mean_closure_days": 8.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Animal Services Assistance Required",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 32,
+        "open_at_snapshot": 1,
+        "closure_sample": 31,
+        "mean_closure_days": 0.68,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "CPBS - Water and Sewer Main Condition Inquiries",
+        "agency": "IS - Capital Planning and Business Services",
+        "requests": 32,
+        "open_at_snapshot": 2,
+        "closure_sample": 30,
+        "mean_closure_days": 9.37,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Bylaw - Cannabis Concerns",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 30,
+        "open_at_snapshot": 20,
+        "closure_sample": 10,
+        "mean_closure_days": 5.3,
+        "open_30_plus": 15
+      },
+      {
+        "service_name": "CT - Projects",
+        "agency": "OS - Calgary Transit",
+        "requests": 30,
+        "open_at_snapshot": 5,
+        "closure_sample": 25,
+        "mean_closure_days": 15.76,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "RSP - Pool - Foothills",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 30,
+        "open_at_snapshot": 0,
+        "closure_sample": 30,
+        "mean_closure_days": 8.63,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Partnerships - Public Art",
+        "agency": "CS - Partnerships",
+        "requests": 29,
+        "open_at_snapshot": 1,
+        "closure_sample": 28,
+        "mean_closure_days": 5.71,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "City Clerks - Municipal Election Question",
+        "agency": "LLSS - City Clerk's Office",
+        "requests": 28,
+        "open_at_snapshot": 0,
+        "closure_sample": 28,
+        "mean_closure_days": 14.75,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CEMA - Non Emergency Request",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 27,
+        "open_at_snapshot": 0,
+        "closure_sample": 27,
+        "mean_closure_days": 2.74,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Compliments / Thank You / Recognition",
+        "agency": "CS - Calgary Fire",
+        "requests": 27,
+        "open_at_snapshot": 2,
+        "closure_sample": 25,
+        "mean_closure_days": 12.48,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "DBBS - SDI - Surface Indemnification Inspection",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 27,
+        "open_at_snapshot": 4,
+        "closure_sample": 23,
+        "mean_closure_days": 10.39,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Roads - Traffic Camera and ATIS Inquiries",
+        "agency": "OS - Mobility",
+        "requests": 27,
+        "open_at_snapshot": 1,
+        "closure_sample": 26,
+        "mean_closure_days": 1.62,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "ERR - Environmental Inquiries",
+        "agency": "PDS - Environmental Risk & Resilience",
+        "requests": 26,
+        "open_at_snapshot": 1,
+        "closure_sample": 25,
+        "mean_closure_days": 7.88,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "CRP - City and Regional Planning General Inquiries",
+        "agency": "PDS - City and Regional Planning",
+        "requests": 25,
+        "open_at_snapshot": 1,
+        "closure_sample": 24,
+        "mean_closure_days": 28.33,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Cemetery - Maintenance - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 25,
+        "open_at_snapshot": 1,
+        "closure_sample": 24,
+        "mean_closure_days": 10.75,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "RSP - Snow Angels Campaign",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 25,
+        "open_at_snapshot": 0,
+        "closure_sample": 25,
+        "mean_closure_days": 6.2,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Traffic Control Change Feedback",
+        "agency": "OS - Mobility",
+        "requests": 25,
+        "open_at_snapshot": 1,
+        "closure_sample": 24,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Bylaw - Public Relations",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 24,
+        "open_at_snapshot": 0,
+        "closure_sample": 24,
+        "mean_closure_days": 1.04,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CE - Water Conservation Programs",
+        "agency": "PDS - Climate and Environment",
+        "requests": 24,
+        "open_at_snapshot": 0,
+        "closure_sample": 24,
+        "mean_closure_days": 1.79,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Building in Progress Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 24,
+        "open_at_snapshot": 0,
+        "closure_sample": 24,
+        "mean_closure_days": 6.21,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Downtown Major Projects",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 24,
+        "open_at_snapshot": 1,
+        "closure_sample": 23,
+        "mean_closure_days": 11.22,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Parks - Snow and Ice Concerns - GIS",
+        "agency": "OS - Parks and Open Spaces",
+        "requests": 24,
+        "open_at_snapshot": 0,
+        "closure_sample": 24,
+        "mean_closure_days": 9.79,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Pool - Shouldice",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 24,
+        "open_at_snapshot": 0,
+        "closure_sample": 24,
+        "mean_closure_days": 3.33,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CE - Environmental Inquiries",
+        "agency": "PDS - Climate and Environment",
+        "requests": 23,
+        "open_at_snapshot": 0,
+        "closure_sample": 23,
+        "mean_closure_days": 4.91,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "DBBS - Unsafe Derelict or Insecure Property",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 23,
+        "open_at_snapshot": 0,
+        "closure_sample": 23,
+        "mean_closure_days": 0.48,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Bike Rack Request - NEW",
+        "agency": "OS - Mobility",
+        "requests": 23,
+        "open_at_snapshot": 17,
+        "closure_sample": 6,
+        "mean_closure_days": 19.33,
+        "open_30_plus": 15
+      },
+      {
+        "service_name": "Roads - New Audible/Accessible Pedestrian Signal",
+        "agency": "OS - Mobility",
+        "requests": 23,
+        "open_at_snapshot": 11,
+        "closure_sample": 12,
+        "mean_closure_days": 5.33,
+        "open_30_plus": 10
+      },
+      {
+        "service_name": "UD - Corrosion - Digging Close to Critical Main",
+        "agency": "IS - Utilities Delivery",
+        "requests": 23,
+        "open_at_snapshot": 0,
+        "closure_sample": 23,
+        "mean_closure_days": 4.91,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - No Control Dog in Off Leash Area",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 22,
+        "open_at_snapshot": 0,
+        "closure_sample": 22,
+        "mean_closure_days": 2.64,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "VFH - Taxi/Limousine/TNC (Ride Sharing) Compliment - RMS",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 22,
+        "open_at_snapshot": 1,
+        "closure_sample": 21,
+        "mean_closure_days": 6.24,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Filming and Movie and Drone Activities",
+        "agency": "OS - Operational Excellence",
+        "requests": 21,
+        "open_at_snapshot": 2,
+        "closure_sample": 19,
+        "mean_closure_days": 3.42,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Events Centre - Scotia Place",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 21,
+        "open_at_snapshot": 0,
+        "closure_sample": 21,
+        "mean_closure_days": 5.1,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "PSD - Geotechnical Inquiry",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 21,
+        "open_at_snapshot": 0,
+        "closure_sample": 21,
+        "mean_closure_days": 15.29,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Water Run Inquiry - MAX",
+        "agency": "OS - Water Services",
+        "requests": 21,
+        "open_at_snapshot": 0,
+        "closure_sample": 21,
+        "mean_closure_days": 3.67,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Landfill - Diversion Programs",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 21,
+        "open_at_snapshot": 0,
+        "closure_sample": 21,
+        "mean_closure_days": 0.52,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - 100th Birthday Surprise",
+        "agency": "CS - Calgary Fire",
+        "requests": 20,
+        "open_at_snapshot": 1,
+        "closure_sample": 19,
+        "mean_closure_days": 8.11,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Community Safety - Publications Request",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 20,
+        "open_at_snapshot": 1,
+        "closure_sample": 19,
+        "mean_closure_days": 1.89,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "PD - Neighbourhood Streets Projects",
+        "agency": "IS - Project Development",
+        "requests": 20,
+        "open_at_snapshot": 0,
+        "closure_sample": 20,
+        "mean_closure_days": 6.05,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Transportation Data",
+        "agency": "OS - Mobility",
+        "requests": 20,
+        "open_at_snapshot": 2,
+        "closure_sample": 18,
+        "mean_closure_days": 5.83,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "CAO - Chief Administrator's Office Inquiry",
+        "agency": "LLSS - Chief Administrators Office",
+        "requests": 19,
+        "open_at_snapshot": 0,
+        "closure_sample": 19,
+        "mean_closure_days": 3.32,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Tank Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 19,
+        "open_at_snapshot": 1,
+        "closure_sample": 18,
+        "mean_closure_days": 8.5,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Mayors Office - Neighbour Day Event Invite",
+        "agency": "Elected Officials",
+        "requests": 19,
+        "open_at_snapshot": 0,
+        "closure_sample": 19,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Partnerships - Sport and Facility Development",
+        "agency": "CS - Partnerships",
+        "requests": 19,
+        "open_at_snapshot": 0,
+        "closure_sample": 19,
+        "mean_closure_days": 7.84,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Traffic Vibration Concerns",
+        "agency": "OS - Mobility",
+        "requests": 19,
+        "open_at_snapshot": 3,
+        "closure_sample": 16,
+        "mean_closure_days": 7.31,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "CT - Bikes on Transit",
+        "agency": "OS - Calgary Transit",
+        "requests": 18,
+        "open_at_snapshot": 4,
+        "closure_sample": 14,
+        "mean_closure_days": 11.57,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "PSD - Buildings - Architecture",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 18,
+        "open_at_snapshot": 0,
+        "closure_sample": 18,
+        "mean_closure_days": 9.67,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Glenmore Reservoir - Boat Dock/Storage Repair",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 18,
+        "open_at_snapshot": 0,
+        "closure_sample": 18,
+        "mean_closure_days": 9.33,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "ACPL - Wise Whiskers  Think Like a Scientist Class Kit",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 17,
+        "open_at_snapshot": 7,
+        "closure_sample": 10,
+        "mean_closure_days": 13.7,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "PSD - Major Transit Projects Inquiry",
+        "agency": "IS - Public Spaces Delivery",
+        "requests": 17,
+        "open_at_snapshot": 0,
+        "closure_sample": 17,
+        "mean_closure_days": 2.65,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Traffic Signal Operation Report - Intersection Plan",
+        "agency": "OS - Mobility",
+        "requests": 17,
+        "open_at_snapshot": 0,
+        "closure_sample": 17,
+        "mean_closure_days": 22.94,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Waste Requirements for Businesses",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 17,
+        "open_at_snapshot": 0,
+        "closure_sample": 17,
+        "mean_closure_days": 2.82,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CHO - Affordable Housing",
+        "agency": "CEO - Chief Housing Office",
+        "requests": 16,
+        "open_at_snapshot": 0,
+        "closure_sample": 16,
+        "mean_closure_days": 32.44,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Glenmore Sailing School Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 16,
+        "open_at_snapshot": 1,
+        "closure_sample": 15,
+        "mean_closure_days": 6.87,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WRS - Recycling - Community",
+        "agency": "OS - Waste and Recycling Services",
+        "requests": 16,
+        "open_at_snapshot": 0,
+        "closure_sample": 16,
+        "mean_closure_days": 4.81,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Unlicensed Animal",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 15,
+        "open_at_snapshot": 0,
+        "closure_sample": 15,
+        "mean_closure_days": 5.93,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Hazmat Inquiries",
+        "agency": "CS - Calgary Fire",
+        "requests": 14,
+        "open_at_snapshot": 2,
+        "closure_sample": 12,
+        "mean_closure_days": 8.58,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Technical Services Review - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 14,
+        "open_at_snapshot": 2,
+        "closure_sample": 12,
+        "mean_closure_days": 8.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "City Clerks - Self-Guided Municipal Complex Tour",
+        "agency": "LLSS - City Clerk's Office",
+        "requests": 14,
+        "open_at_snapshot": 3,
+        "closure_sample": 11,
+        "mean_closure_days": 13.55,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "LEAD Program Inquiry",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 14,
+        "open_at_snapshot": 0,
+        "closure_sample": 14,
+        "mean_closure_days": 5.57,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Mayors Office - Meeting Request",
+        "agency": "Elected Officials",
+        "requests": 14,
+        "open_at_snapshot": 0,
+        "closure_sample": 14,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Shared and Rental E-Bike Program",
+        "agency": "OS - Mobility",
+        "requests": 14,
+        "open_at_snapshot": 10,
+        "closure_sample": 4,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 8
+      },
+      {
+        "service_name": "CFD - Lockbox Programming or Billing Concern",
+        "agency": "CS - Calgary Fire",
+        "requests": 13,
+        "open_at_snapshot": 0,
+        "closure_sample": 13,
+        "mean_closure_days": 13.92,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Missed Annual Inspection - FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 13,
+        "open_at_snapshot": 3,
+        "closure_sample": 10,
+        "mean_closure_days": 26.7,
+        "open_30_plus": 3
+      },
+      {
+        "service_name": "CFD - Public Affairs Inquiries",
+        "agency": "CS - Calgary Fire",
+        "requests": 13,
+        "open_at_snapshot": 2,
+        "closure_sample": 11,
+        "mean_closure_days": 12.55,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "City Clerks - General Concerns",
+        "agency": "LLSS - City Clerk's Office",
+        "requests": 13,
+        "open_at_snapshot": 0,
+        "closure_sample": 13,
+        "mean_closure_days": 4.46,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "REDS - Acquisitions and Expropriations",
+        "agency": "IS - Real Estate and Development Services",
+        "requests": 13,
+        "open_at_snapshot": 0,
+        "closure_sample": 13,
+        "mean_closure_days": 4.85,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "REDS - Development Project Inquiry",
+        "agency": "IS - Real Estate and Development Services",
+        "requests": 13,
+        "open_at_snapshot": 0,
+        "closure_sample": 13,
+        "mean_closure_days": 3.69,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Comm Strategies - General Concerns",
+        "agency": "CS - Community Strategies",
+        "requests": 12,
+        "open_at_snapshot": 0,
+        "closure_sample": 12,
+        "mean_closure_days": 4.5,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Corporate Research Inquiry",
+        "agency": "PICS - 311 and Insights",
+        "requests": 12,
+        "open_at_snapshot": 2,
+        "closure_sample": 10,
+        "mean_closure_days": 3.3,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "IT - GIS Mapping and Analysis Inquiry",
+        "agency": "PICS - Information Technology",
+        "requests": 12,
+        "open_at_snapshot": 0,
+        "closure_sample": 12,
+        "mean_closure_days": 2.83,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Excess Pet Concern",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 11,
+        "open_at_snapshot": 0,
+        "closure_sample": 11,
+        "mean_closure_days": 4.55,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "ERR - Riparian - Riverbank Inquiries",
+        "agency": "PDS - Environmental Risk & Resilience",
+        "requests": 11,
+        "open_at_snapshot": 1,
+        "closure_sample": 10,
+        "mean_closure_days": 10.1,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "ERR - Watershed",
+        "agency": "PDS - Environmental Risk & Resilience",
+        "requests": 11,
+        "open_at_snapshot": 1,
+        "closure_sample": 10,
+        "mean_closure_days": 4.5,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Load Ban and Overweight Vehicle on Road Inquiry",
+        "agency": "OS - Mobility",
+        "requests": 11,
+        "open_at_snapshot": 0,
+        "closure_sample": 11,
+        "mean_closure_days": 6.82,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Free Summer Programs",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 10,
+        "open_at_snapshot": 0,
+        "closure_sample": 10,
+        "mean_closure_days": 5.9,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "RSP - Home Services for Seniors - Bylaw Concern",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 10,
+        "open_at_snapshot": 0,
+        "closure_sample": 10,
+        "mean_closure_days": 9.9,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Recreation - Arena Tournament and Special Event Application",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 10,
+        "open_at_snapshot": 0,
+        "closure_sample": 10,
+        "mean_closure_days": 4.4,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CAI - GIS Mapping and Analysis Inquiry",
+        "agency": "PICS - Collaboration, Analytics and Innovation",
+        "requests": 9,
+        "open_at_snapshot": 0,
+        "closure_sample": 9,
+        "mean_closure_days": 2.78,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CHO - Affordable Housing",
+        "agency": "CS - Chief Housing Office",
+        "requests": 9,
+        "open_at_snapshot": 0,
+        "closure_sample": 9,
+        "mean_closure_days": 2.44,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Animal Vehicle Offences",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 8,
+        "open_at_snapshot": 0,
+        "closure_sample": 8,
+        "mean_closure_days": 2.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Professional Dogwalker Permit",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 8,
+        "open_at_snapshot": 0,
+        "closure_sample": 8,
+        "mean_closure_days": 33.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Law - General Concern - After Hours",
+        "agency": "LLSS - Law",
+        "requests": 8,
+        "open_at_snapshot": 0,
+        "closure_sample": 8,
+        "mean_closure_days": 6.25,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Mayors Office - Birthday or Anniversary Request",
+        "agency": "Elected Officials",
+        "requests": 8,
+        "open_at_snapshot": 0,
+        "closure_sample": 8,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Animal Interference",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 7,
+        "open_at_snapshot": 0,
+        "closure_sample": 7,
+        "mean_closure_days": 6.29,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CE - Treatment Plant Tours",
+        "agency": "PDS - Climate and Environment",
+        "requests": 7,
+        "open_at_snapshot": 0,
+        "closure_sample": 7,
+        "mean_closure_days": 11.86,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Downtown Strategy - General Inquiries",
+        "agency": "PDS - Downtown Strategy",
+        "requests": 7,
+        "open_at_snapshot": 1,
+        "closure_sample": 6,
+        "mean_closure_days": 6.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "IT - Public WiFi - Shaw Go WiFi at City Facilities",
+        "agency": "PICS - Information Technology",
+        "requests": 7,
+        "open_at_snapshot": 0,
+        "closure_sample": 7,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CE - Watershed",
+        "agency": "PDS - Climate and Environment",
+        "requests": 6,
+        "open_at_snapshot": 0,
+        "closure_sample": 6,
+        "mean_closure_days": 19.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CFD - Pre-Purchase Insurance Inspection- FHB",
+        "agency": "CS - Calgary Fire",
+        "requests": 6,
+        "open_at_snapshot": 1,
+        "closure_sample": 5,
+        "mean_closure_days": 15.6,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "CSC - Corporate Research Inquiry",
+        "agency": "PICS - Customer Service and Communications",
+        "requests": 5,
+        "open_at_snapshot": 1,
+        "closure_sample": 4,
+        "mean_closure_days": 3.25,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Downtown Strategy - General Inquiries",
+        "agency": "N/A",
+        "requests": 5,
+        "open_at_snapshot": 0,
+        "closure_sample": 5,
+        "mean_closure_days": 36.2,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "ERR - Treatment Plant Tours",
+        "agency": "PDS - Environmental Risk & Resilience",
+        "requests": 5,
+        "open_at_snapshot": 0,
+        "closure_sample": 5,
+        "mean_closure_days": 16.2,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "ERR - Water Restrictions",
+        "agency": "PDS - Environmental Risk & Resilience",
+        "requests": 5,
+        "open_at_snapshot": 0,
+        "closure_sample": 5,
+        "mean_closure_days": 5.8,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - Adaptive Roadways and Seasonal Patio Programs",
+        "agency": "OS - Mobility",
+        "requests": 5,
+        "open_at_snapshot": 0,
+        "closure_sample": 5,
+        "mean_closure_days": 14.2,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "WATS - Treatment Plant Tours",
+        "agency": "OS - Water Services",
+        "requests": 4,
+        "open_at_snapshot": 0,
+        "closure_sample": 4,
+        "mean_closure_days": 5.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "AS - Excess Pet Permit",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 3,
+        "open_at_snapshot": 0,
+        "closure_sample": 3,
+        "mean_closure_days": 38.33,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CP - Public Infrastructure Inquiry",
+        "agency": "PDS - Community Planning",
+        "requests": 3,
+        "open_at_snapshot": 0,
+        "closure_sample": 3,
+        "mean_closure_days": 9.67,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "City Auditors - General Inquiries",
+        "agency": "Office of the City Auditor",
+        "requests": 3,
+        "open_at_snapshot": 0,
+        "closure_sample": 3,
+        "mean_closure_days": 3.33,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Comm Strategies - Disability/Accessibility - Meeting & Eve",
+        "agency": "CS - Community Strategies",
+        "requests": 3,
+        "open_at_snapshot": 1,
+        "closure_sample": 2,
+        "mean_closure_days": 33.5,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "Comm Strategies - Disability/Accessibility - Meeting & Event",
+        "agency": "CS - Community Strategies",
+        "requests": 3,
+        "open_at_snapshot": 0,
+        "closure_sample": 3,
+        "mean_closure_days": 4.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "DBBS - Emergency Electrical Reconnection",
+        "agency": "PDS - Development, Business and Building Services",
+        "requests": 3,
+        "open_at_snapshot": 2,
+        "closure_sample": 1,
+        "mean_closure_days": 2.0,
+        "open_30_plus": 2
+      },
+      {
+        "service_name": "RSP - Mobile Adventure Playground",
+        "agency": "CS - Recreation and Social Programs",
+        "requests": 3,
+        "open_at_snapshot": 0,
+        "closure_sample": 3,
+        "mean_closure_days": 22.67,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Bylaw - Beyond the Badge Program Request",
+        "agency": "CS - Emergency Management and Community Safety",
+        "requests": 2,
+        "open_at_snapshot": 2,
+        "closure_sample": 0,
+        "mean_closure_days": null,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "CAI - Block Profile Inquiry",
+        "agency": "PICS - Collaboration, Analytics and Innovation",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 7.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CAI - City Online - Feedback Form Only",
+        "agency": "PICS - Collaboration, Analytics and Innovation",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CAI - Electronic Data Request",
+        "agency": "PICS - Collaboration, Analytics and Innovation",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 23.5,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CE - Riparian - Riverbank Inquiries",
+        "agency": "PDS - Climate and Environment",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 2.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CE - Water Brochure",
+        "agency": "PDS - Climate and Environment",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 3.5,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "ERR - Water Brochure",
+        "agency": "PDS - Environmental Risk & Resilience",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 6.5,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "IT - Block Profile Inquiry",
+        "agency": "PICS - Information Technology",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 1.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "IT - City Fibre Request",
+        "agency": "PICS - Information Technology",
+        "requests": 2,
+        "open_at_snapshot": 1,
+        "closure_sample": 1,
+        "mean_closure_days": 13.0,
+        "open_30_plus": 1
+      },
+      {
+        "service_name": "IT - Electronic Data Request",
+        "agency": "PICS - Information Technology",
+        "requests": 2,
+        "open_at_snapshot": 1,
+        "closure_sample": 1,
+        "mean_closure_days": 15.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Project Development - Employee Complaint - Compliment",
+        "agency": "IS - Project Development",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 19.5,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Regulatory Affairs - General Inquiry",
+        "agency": "CPFS - Finance",
+        "requests": 2,
+        "open_at_snapshot": 0,
+        "closure_sample": 2,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "CP - Re-Use of Existing Site Services",
+        "agency": "PDS - Community Planning",
+        "requests": 1,
+        "open_at_snapshot": 1,
+        "closure_sample": 0,
+        "mean_closure_days": null,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Mayors Office - Event Invitation",
+        "agency": "Elected Officials",
+        "requests": 1,
+        "open_at_snapshot": 0,
+        "closure_sample": 1,
+        "mean_closure_days": 0.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Partnerships - Housing Solutions",
+        "agency": "CS - Partnerships",
+        "requests": 1,
+        "open_at_snapshot": 0,
+        "closure_sample": 1,
+        "mean_closure_days": 3.0,
+        "open_30_plus": 0
+      },
+      {
+        "service_name": "Roads - 5G Wireless Infrastructure Deployment Inquiry",
+        "agency": "OS - Mobility",
+        "requests": 1,
+        "open_at_snapshot": 1,
+        "closure_sample": 0,
+        "mean_closure_days": null,
+        "open_30_plus": 0
+      }
+    ],
+    "channels": [
+      {
+        "channel": "Other",
+        "requests": 310692
+      },
+      {
+        "channel": "App",
+        "requests": 71228
+      },
+      {
+        "channel": "Web",
+        "requests": 3
+      }
+    ],
+    "weekdays": [
+      {
+        "weekday": "Monday",
+        "weekday_order": 1,
+        "requests": 61538
+      },
+      {
+        "weekday": "Tuesday",
+        "weekday_order": 2,
+        "requests": 70446
+      },
+      {
+        "weekday": "Wednesday",
+        "weekday_order": 3,
+        "requests": 67047
+      },
+      {
+        "weekday": "Thursday",
+        "weekday_order": 4,
+        "requests": 66675
+      },
+      {
+        "weekday": "Friday",
+        "weekday_order": 5,
+        "requests": 60037
+      },
+      {
+        "weekday": "Saturday",
+        "weekday_order": 6,
+        "requests": 29415
+      },
+      {
+        "weekday": "Sunday",
+        "weekday_order": 7,
+        "requests": 26765
+      }
+    ],
+    "closure_percentiles": [
+      {
+        "median_closure": 2.0,
+        "p90_closure": 21.0
+      }
+    ]
+  }
+}

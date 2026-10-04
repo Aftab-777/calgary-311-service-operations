@@ -1,0 +1,19 @@
+relationship 5d9d0fcd55a3992b4659
+	fromColumn: FactRequests.service_key
+	toColumn: DimService.service_key
+	crossFilteringBehavior: oneDirection
+
+relationship 720aa67d05fc44ec3f59
+	fromColumn: FactRequests.channel_key
+	toColumn: DimChannel.channel_key
+	crossFilteringBehavior: oneDirection
+
+relationship 879b1657755dc611472e
+	fromColumn: FactRequests.community_key
+	toColumn: DimCommunity.community_key
+	crossFilteringBehavior: oneDirection
+
+relationship ea293c919a5238cb1ebe
+	fromColumn: FactRequests.requested_date
+	toColumn: DimDate.date
+	crossFilteringBehavior: oneDirection

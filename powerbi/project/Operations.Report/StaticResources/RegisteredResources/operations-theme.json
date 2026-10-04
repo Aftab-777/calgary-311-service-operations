@@ -1,0 +1,13 @@
+{
+  "name": "Calgary Service Operations",
+  "dataColors": [
+    "#087D77",
+    "#B66A22",
+    "#8BAB79",
+    "#526D89",
+    "#A18DB0"
+  ],
+  "background": "#FFFFFF",
+  "foreground": "#182F35",
+  "tableAccent": "#087D77"
+}

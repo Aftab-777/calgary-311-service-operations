@@ -1,0 +1,23 @@
+table DimChannel
+	column channel_key
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: channel_key
+		isHidden
+
+	column channel
+		dataType: string
+		summarizeBy: none
+		sourceColumn: channel
+
+	partition DimChannel = m
+		mode: import
+		source =
+			let
+			    Packed = Text.Combine({"S85IzMtLzYnPTq3USYawebkMdRwLCni5jHT8SzJSi3i5jHXCU5N4uQA="}),
+			    Source = Csv.Document(Binary.Decompress(Binary.FromText(Packed, BinaryEncoding.Base64), Compression.Deflate), [Delimiter=",", Columns=2, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+			    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+			    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+			    Typed = Table.TransformColumnTypes(Blanks, {{"channel_key", Int64.Type}, {"channel", type text}}, "en-CA")
+			in
+			    Typed

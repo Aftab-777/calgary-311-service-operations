@@ -1,0 +1,35 @@
+table DimDate
+	column date
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: date
+		formatString: "yyyy-MM-dd"
+		annotation UnderlyingDateTimeDataType = Date
+
+	column month
+		dataType: string
+		summarizeBy: none
+		sourceColumn: month
+
+	column weekday
+		dataType: string
+		summarizeBy: none
+		sourceColumn: weekday
+		sortByColumn: weekday_order
+
+	column weekday_order
+		dataType: int64
+		summarizeBy: none
+		sourceColumn: weekday_order
+
+	partition DimDate = m
+		mode: import
+		source =
+			let
+			    Packed = Text.Combine({"hdPNiiRFFIbhveCdtBDnO/Fz4gbcuXLApTR0wYjYDWU34t3P1Kh5CiPqTUjIhC8X8UC8L8/vl6c/3l7fPz/9dbn8/vL893/vX9+uL5fr99+pqP9Q7Ovz9O/n06fPH9c/b7/Wu1nH/OP1t9vY7kY/xp+f3z+ut7nfzTXnj9fbOO7Gdow/vX0b7W7seaiPy7cz6W4dx/rL5eX1n93v9mDSBJIVJJkByQQkcyJZZZI1JFkn0mBSEGkCSYVIMiZJSJIDSRVJakBSJ9JAUpyQJpK8AMkNSMpMtZCUkWohKSPVSlI2qh1Jmak2JGWoWkjKTrUnBZEmkI5ItyQzJpmQZA4kq0iyBiTrRBpIihPSRJIKkGRIkoAkB5IqkdSYpM6kQaQAkmdLvpA8W/KF5NmSryTPlnxH8mzJNyTPlnwhebbke1IQaQLpaGlLMmOSCUnmQLKKJGtAsk6kgaQ4IU0kqQBJhiQJSHIgqRJJjUnqTBpECiZNIHkBkttjUs1G645UM9O6IdUMtS6kmp3WDalmpnUh1Yy0LqSakdYtKU5IE0lHqDuSGZJMQDIHklUiWWOSdSYNIgWTJpBUgCQjksQkOZJUgaSGJHUiDSIFkiaTvACpZYptIbXssG1ILTtsC6llh20htaywraSWGbYdqWWJbU8KIk0kHR3uSGZAMhHJnElWkWQNSNaZNIgURJpEUmGSDEkSkORIUgWSGpDUkTROSMGkCSQvSHJ7SOoZaV9IPSPtK6lno31H6plp35B6htoXUs9O+4bUM9O+IwWRJpGORh+QzJBkApI5kqwCyRqQrCNpnJCCSRNIKkiSAUkCkpxIqkxSQ5I6kQaTgkgTSF4ek0ZmOHakkSWODWlkimMhjexwbEgjOxwLaWSHYyGNrHBsSXFCmkg6UtyRzJBkApI5kKwSyRqTrDNpECmYNIGkAiQZkSQmyZGkCiQ1JKkTaRApkDSZ5AVJbg9JkZ3GhhSZaSykyEhjIUVGGispstHYkSIzjQ0pMtTYkYJJE0hHpDuSGZFMTDJHklUgWUOSdSINIgWSJpNUkCQDkoQkOZBUgaRGJPUT0mBSEGkiyQuQ3B6SZkY6V9LMRueONDPTuSHNDHUupJmdzg1pZqZzIc2MdO5IgaTJpCPTPckMSCYkmQPJKpCsEcn6CWkwKYg0kaQCJBmQJCLJmaSKJDUgqTNpECmINInkBUhWjhK/XsCFdJt1zP8j3UY/xnvSFw=="}),
+			    Source = Csv.Document(Binary.Decompress(Binary.FromText(Packed, BinaryEncoding.Base64), Compression.Deflate), [Delimiter=",", Columns=4, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+			    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+			    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+			    Typed = Table.TransformColumnTypes(Blanks, {{"date", type date}, {"month", type text}, {"weekday", type text}, {"weekday_order", Int64.Type}}, "en-CA")
+			in
+			    Typed

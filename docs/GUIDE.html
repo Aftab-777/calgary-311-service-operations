@@ -1,0 +1,88 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Calgary 311 project and interview guide</title><style>body{max-width:960px;margin:0 auto;padding:45px 25px;font:17px/1.65 system-ui,Segoe UI,sans-serif;color:#202b30;background:#fff}h1{font-size:38px;line-height:1.15}h2{font-size:25px;margin-top:45px}h3{font-size:19px;margin:28px 0 8px}h1,h2,h3{color:#000}a{color:#086963}img{display:block;max-width:100%;height:auto;border:1px solid #ddd}figure{margin:30px 0}figcaption,.meta{font-size:14px;color:#546164}pre{white-space:pre-wrap;overflow-wrap:anywhere;padding:18px;background:#f5f6f6;font:14px/1.6 Consolas,monospace}table{border-collapse:collapse;width:100%;font-size:15px}th,td{border:1px solid #d9d9d9;padding:12px;text-align:left}th{background:#e9eef0}nav a{margin-right:18px}li{margin:8px 0}@media print{body{padding:0;font-size:11pt}h2{break-after:avoid}pre,figure{break-inside:avoid}nav{display:none}@page{size:letter;margin:.75in}}</style></head><body>
+<nav><a href="../dashboard/index.html">Open dashboard</a><a href="METHODOLOGY.html">Full methodology</a><a href="VALIDATION.html">Validation status</a></nav>
+<h1>Calgary 311 project and interview guide</h1><p class="meta">Aftab Ahmed · Independent portfolio study · Source snapshot October 3 2026</p>
+<p>This guide explains the project, its analytical decisions, its working browser dashboard and its Power BI source. Use it to prepare a short demonstration and answer technical interview questions. The strongest part of the project is the connection between a reproducible pipeline, transparent measure definitions and careful interpretation of real operational records.</p>
+<p>The analysis covers 385,723 service requests submitted from January through September 2026. After excluding 3,800 explicit duplicate records, 381,923 requests remain. At the source snapshot, 25,636 were open. A total of 17,898 had been open at least 30 calendar days. These are descriptive workload measures; they do not establish that service standards were missed.</p>
+<h2>Why this project fits the portfolio</h2>
+<p>The project adds request-level operational analysis alongside the existing Edmonton retail time-series project. It demonstrates SQL joins and window functions, Python data preparation, a dimensional model, filter-aware metrics, data-quality decisions and communication of limitations. The browser version gives a reviewer immediate access to the analysis without requiring Power BI or a sign-in.</p>
+<p>The generated Power BI project provides editable source for three report pages and 14 DAX measures. JSON structures and embedded data have been checked, but Desktop execution remains pending. Describe it as Power BI project source until opening, refresh and rendering checks are completed.</p>
+<h2>The problem and intended audience</h2>
+<p>An operations analyst needs to distinguish incoming demand from requests that remain open. A large volume category may have relatively little open workload, while a smaller category may contain older open requests. Looking only at average closure duration can obscure both the slower tail of closed records and records that never entered the closed sample.</p>
+<p>This portfolio dashboard supports exploration by submission month and service category. Its intended audience is a reviewer or analyst examining where to investigate further. No City stakeholder commissioned it, and no operational improvement or financial saving has been measured.</p>
+<h2>A three minute demonstration</h2>
+<ol><li><strong>Start with scope.</strong> Explain that January to September defines when requests were submitted. October 3 is the date used for observed status and open age.</li><li><strong>Show Overview.</strong> Point to 381,923 requests, 25,636 open, a two-day median and a 21-day P90. Explain that the duration sample contains 356,287 valid Closed records.</li><li><strong>Filter to September.</strong> The cards should show 40,697 requests, 8,526 open, a one-day median and a nine-day P90. Explain that September requests have shorter follow-up than January requests.</li><li><strong>Show Open workload.</strong> Reset filters, then compare age bands and categories. Roads Signs Missing Damaged has 2,746 open requests, including 2,502 aged 30 days or more.</li><li><strong>Finish with Data quality.</strong> Show the 3,800 duplicate exclusions, 1,621 Open records with a closure date and 24,237 records without a community code. Explain why those records are treated differently.</li></ol>
+<figure><img src="screenshots/overview.jpg" alt="Browser dashboard overview with KPI cards and demand charts"><figcaption>Actual browser demonstration. Power BI visuals have not yet been validated in Desktop.</figcaption></figure>
+<h2>How the data moves through the project</h2>
+<p>The Node.js downloader queries the public Socrata API in pages of 10,000 records, ordered by request ID. It selects only ten useful fields and checks the source update timestamp before and after extraction. It verifies uniqueness and row counts, then writes a CSV plus a SHA-256 manifest.</p>
+<p>Python validates that preserved input and derives dates, flags, dimensions and durations. The same fact and dimension tables are loaded into an in-memory SQLite database. SQL computes independent summaries and percentiles, and assertions compare them with Python. The browser consumes compact aggregates with exact duration histograms. A separate generator embeds compressed CSV tables in the native Power BI source.</p>
+<pre>City public API
+  → selected CSV + provenance manifest
+  → Python request fact + dimensions
+  → independent SQLite reconciliation
+  → browser aggregates + portable Power BI project</pre>
+<p>The pipeline deliberately avoids packages for its main build. Python 3.10 or later and Node.js 18 or later are sufficient. Viewing the HTML dashboard needs only a modern browser. Native Power BI authoring requires Power BI Desktop on Windows. No paid cloud service or scheduled refresh has been configured.</p>
+<h2>The model and its grain</h2>
+<table><thead><tr><th>Table</th><th>Grain</th><th>Role</th></tr></thead><tbody><tr><td>FactRequests</td><td>One source request ID</td><td>Flags, dates, closure duration and open age</td></tr><tr><td>DimService</td><td>Service name plus agency</td><td>Preserves source category distinctions</td></tr><tr><td>DimChannel</td><td>Source channel</td><td>App, Other and Web</td></tr><tr><td>DimCommunity</td><td>Community code plus name</td><td>Retains missing values as Unknown</td></tr><tr><td>DimDate</td><td>Calendar day</td><td>Submission month and weekday</td></tr><tr><td>Snapshot</td><td>One metadata record</td><td>As-of date and cohort boundaries</td></tr></tbody></table>
+<p>Four dimension relationships filter the fact in one direction. Snapshot is disconnected. Dimension keys are deterministic within the snapshot, but they are not guaranteed to remain stable after a new download. Service categories with similar names are kept separate because no verified consolidation map exists.</p>
+<h2>SQL you should be able to explain</h2>
+<p>This query joins requests to the submission calendar, excludes explicit duplicates and uses a window function to return the preceding month's volume. The previous value is descriptive; comparing it does not establish seasonality.</p>
+<pre>SELECT d.month,
+       COUNT(*) AS requests,
+       SUM(f.is_open) AS open_at_snapshot,
+       LAG(COUNT(*)) OVER (ORDER BY d.month)
+         AS previous_month_requests
+FROM FactRequests f
+JOIN DimDate d ON d.date = f.requested_date
+WHERE f.duplicate = 0
+GROUP BY d.month
+ORDER BY d.month;</pre>
+<p>COUNT counts every nonduplicate request, regardless of whether it is now open or closed. SUM of the binary open flag counts currently Open requests. The date join uses submission date, so the open count cannot be interpreted as historical month-end backlog.</p>
+<p>The percentile query in <code>sql/analysis.sql</code> ranks valid closure durations using ROW_NUMBER, obtains the sample size with a window count and interpolates the positions 1 + (n − 1) × p. This independently checks Python's median and P90 without relying on a database-specific percentile extension.</p>
+<h2>DAX and filter context</h2>
+<pre>Requests =
+CALCULATE (
+    COUNTROWS ( FactRequests ),
+    FactRequests[duplicate] = 0
+)
+
+Median Closure Days =
+MEDIAN ( FactRequests[closure_days] )
+
+P90 Closure Days =
+PERCENTILEX.INC (
+    FILTER (
+        FactRequests,
+        NOT ISBLANK ( FactRequests[closure_days] )
+    ),
+    FactRequests[closure_days],
+    0.9
+)</pre>
+<p>Dimension selections filter the fact before measures are evaluated. Closure duration is populated only for valid nonduplicate Closed records, so blank values keep Open and duplicate records out of the duration sample. Zero-day closures remain valid observations. P90 explicitly filters blanks. The model definitions have not yet been executed in Desktop, so these explanations describe the intended calculation and the independently checked Python and SQL equivalents.</p>
+<h2>Findings and reasonable follow up</h2>
+<p><strong>Demand peaked in June within this cohort.</strong> June had 54,163 nonduplicate requests, followed by July with 52,529. A sensible follow-up is to compare several years with consistent service definitions before calling this a seasonal pattern.</p>
+<p><strong>The closed-duration distribution has a slower tail.</strong> The median is two days and P90 is 21 days. This indicates a substantial difference between the middle and upper portion of the closed sample. It does not include unresolved waiting time, and the mix of services contributes to the combined distribution.</p>
+<p><strong>Older open work is visible.</strong> Of 25,636 Open requests, 17,898 are at least 30 days old and 10,481 are at least 90 days old. A reasonable next step would be to obtain service-specific targets, priority and scheduled-work information before assessing timeliness or recommending staffing changes.</p>
+<p><strong>Status conflicts need explicit treatment.</strong> The 1,621 records marked Open despite containing a closure date could reflect reopening or source workflow behavior. This project does not assume a cause; it follows current status for open workload and flags the inconsistency.</p>
+<figure><img src="screenshots/quality.jpg" alt="Data quality page showing inclusion, exclusions and source limitations"><figcaption>The quality page exposes decisions that change the interpretation of the headline measures.</figcaption></figure>
+<h2>Interview questions and answer points</h2>
+<h3>What was the hardest analytical decision</h3><p>Separating administrative closure from actual repair, and separating closed duration from open age. Combining them into a single resolution-time figure would misrepresent both the source semantics and incomplete outcomes.</p>
+<h3>Why use median and P90 instead of just an average</h3><p>The median describes the midpoint and P90 makes the slower tail visible. Both are affected by service mix and the exclusion of still-open records. The SQL service output also includes a mean, which can support further distribution comparisons.</p>
+<h3>Why can you not average category medians</h3><p>A median depends on the ordered observations, not just the medians of groups. Even weighting group medians by their counts does not generally recover the combined median. The browser instead combines counts for each duration and recalculates the desired rank.</p>
+<h3>How did you validate the figures</h3><p>The build checks source checksum, row count, unique IDs and cohort dates. Python and SQL independently compute counts and percentiles. Browser aggregation is compared with those outputs. Separate fixtures test duplicates, missing dates, zero-day closure, future dates, unknown status and percentile interpolation. Model checks verify that embedded CSVs decode to exactly the source bytes and that dimension joins contain no orphan facts.</p>
+<h3>Why not treat every blank closure date as an error</h3><p>Open requests normally lack a closure date. A missing date is flagged as a closure-quality issue when the status is Closed. Open records are instead evaluated for their age at the snapshot.</p>
+<h3>Does a September filter show September backlog</h3><p>No. It selects requests submitted in September and uses their observed status at the later source snapshot. Historical backlog requires status history or archived snapshots covering all relevant submission cohorts.</p>
+<h3>What business recommendation can you support</h3><p>The evidence supports targeted review of older open categories and verification of status anomalies. It does not support a specific headcount, savings estimate or SLA judgment. Those require service targets, work schedules, complexity, costs and outcome information.</p>
+<h3>What would a production version need</h3><p>Incremental ingestion with durable keys, archived snapshots or status events, source change monitoring, validated service mappings, agreed targets, access controls where needed, observability and ownership. Those are proposed extensions, not implemented features.</p>
+<h3>How does it relate to Power Platform</h3><p>The dimensional model and explicit measures are relevant to Power BI work. A future controlled intake or review workflow could use Power Apps and Power Automate, but this project does not contain those applications. Do not claim them as delivered components.</p>
+<h2>Practice before presenting</h2>
+<ol><li>Run the three-minute walkthrough without reading a script.</li><li>Explain why the 3,800 duplicates remain in source records but disappear from Requests.</li><li>Use September and WRS Cart Management together. Expect 2,475 requests, 42 open, median one day, P90 four days and 2,433 valid closures.</li><li>Open the SQL and DAX files and explain the join grain, flags and filter context.</li><li>State the native Power BI validation status accurately.</li></ol>
+<h2>Rebuild and continue</h2>
+<pre>python -m unittest discover -s tests -v
+python scripts/build.py
+python scripts/build_powerbi.py
+python scripts/check_model.py
+node tests/test_dashboard.cjs</pre>
+<p>Use the preserved CSV for reproducibility. A live download changes the snapshot and must be followed by a new build, narrative review and replacement screenshots. The generated report and semantic-model files are overwritten by the generator. The README and validation document identify remaining acceptance checks.</p>
+<h2>Sources and attribution</h2>
+<p>Contains information licensed under the <a href="https://data.calgary.ca/stories/s/u45n-7awa/">Open Government Licence – City of Calgary</a>. The <a href="https://data.calgary.ca/Services-and-Amenities/311-Service-Requests/iahh-g8bj">official 311 dataset</a> supplies the records. Calgary's <a href="https://www.calgary.ca/311/faqs.html">311 FAQs</a> explain administrative closure. This independent project implies no City endorsement.</p>
+</body></html>

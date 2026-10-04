@@ -1,0 +1,34 @@
+table Snapshot
+	isHidden
+	column as_of_date
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: as_of_date
+		formatString: "yyyy-MM-dd"
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cohort_start
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: cohort_start
+		formatString: "yyyy-MM-dd"
+		annotation UnderlyingDateTimeDataType = Date
+
+	column cohort_end_exclusive
+		dataType: dateTime
+		summarizeBy: none
+		sourceColumn: cohort_end_exclusive
+		formatString: "yyyy-MM-dd"
+		annotation UnderlyingDateTimeDataType = Date
+
+	partition Snapshot = m
+		mode: import
+		source =
+			let
+			    Packed = Text.Combine({"SyyOz0+LT0ksSdVJzs/ILyqJLy5JLCqBcVLzUuJTK5JzSoszy1J5uYwMjMx0DQ10DYx1wEwDQyDSgYsa8nIBAA=="}),
+			    Source = Csv.Document(Binary.Decompress(Binary.FromText(Packed, BinaryEncoding.Base64), Compression.Deflate), [Delimiter=",", Columns=3, Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+			    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+			    Blanks = Table.ReplaceValue(Headers, "", null, Replacer.ReplaceValue, Table.ColumnNames(Headers)),
+			    Typed = Table.TransformColumnTypes(Blanks, {{"as_of_date", type date}, {"cohort_start", type date}, {"cohort_end_exclusive", type date}}, "en-CA")
+			in
+			    Typed

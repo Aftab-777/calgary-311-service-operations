@@ -1,0 +1,14 @@
+{
+  "embedded_tables": [
+    "DimChannel",
+    "DimCommunity",
+    "DimDate",
+    "DimService",
+    "FactRequests",
+    "Snapshot"
+  ],
+  "embedded_csv_byte_equality": "passed",
+  "unique_dimension_keys": "passed",
+  "referential_integrity": "passed",
+  "native_M_DAX_TMDL_execution": "not tested"
+}
